@@ -3,9 +3,9 @@
 ## Table Of Contents
   1. [Overview](#overview)
   2. [Onboarding](#onboarding)
-    2.1 [Roles](#roles)
+  2.1 [Roles](#roles)
   3. [Unparing and Uninstalling](#unpairinganduninstalling)
-    3.1 [Important Note](#importantnote)
+  3.1 [Important Note](#importantnote)
   4. [General Notes](#generalnotes)
   5. [TODOs](#todos)
 
