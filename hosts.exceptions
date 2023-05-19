@@ -1,0 +1,201 @@
+---
+all:
+  hosts:
+
+    #EXEMPT-PODMAN    seatscmsldap01:
+
+
+# DECOM            se4tsjsmithrhel.03032023
+# DECOM            se4tsmqtest01.03.02.2023
+# DECOM           seadv2cmsdb01_DECOM_1796718
+# DECOM           seadv2cmshora01.01.31.2023
+# DECOM            seadvsbl8db02.09.01.2023
+# DECOM            seadvsbl8pdb01.11.15.2022
+# DECOM           seaqacmshora01.01.31.2023
+# DECOM           seaqajcmsljmp01.08.02.2023
+# DECOM            seaqas4aapp101.03.08.2023
+# DECOM            seaqas4aapp102.03.08.2023
+# DECOM            seaqas4abal101.09.03.2023
+# DECOM            seaqas4amq101.03.08.2023
+# DECOM            seaqas4amq102.09.03.2023
+# DECOM            seaqas4apgdb101.09.03.2023
+# DECOM            seaqasbl8db02.11.15.2022
+# DECOM            seaqasbl8db03.11.15.2022
+# DECOM            seatbcmsora01_DECOM_1796718
+# DECOM           seatccms7db01_DECOM_1796718
+# DECOM            seaticmsdb01_DECOM_1796718
+# DECOM            seatrcmsora01_DECOM_1796718
+# DECOM            seatsair12cdb01.22.02.2023
+# DECOM            seatsairpricedb01.22.02,2023
+# DECOM            seatschef01.14.02.2023
+# DECOM            seatsewalletdb01.01252022
+# DECOM            seatsoaltiris01.14.02.2023
+# DECOM            seatsrhnsat01.10.02.2023
+# DECOM            seatss4aapp201.09.03.2023
+# DECOM            seatss4aapp202.09.03.2023
+# DECOM            seatss4aapp301.09.03.2023
+# DECOM            seatss4aapp302.09.03.2023
+# DECOM            seatss4aapp401.09.03.2023
+# DECOM            seatss4aapp402.09.03.2023
+# DECOM            seatss4abal301.09.03.2023
+# DECOM            seatss4abal401.09.03.2023
+# DECOM            seatss4amq201.09.03.2023
+# DECOM            seatss4amq301.09.03.2023
+# DECOM            seatss4amq302.09.03.2023
+# DECOM            seatss4amq401.09.03.2023
+# DECOM            seatss4amq402.09.03.2023
+# DECOM            seatss4apgdb301.09.03.2023
+# DECOM            seatss4apgdb401.09.03.2023
+# DECOM            seatssbl8db01.11.15.2022
+# DECOM            seatssbl8db02.09.01.2023
+# DECOM            seavvrhsatsv01.02.27.2023
+# DECOM            igqqapshcmapp03_75457_DECOM
+
+# DUP            se4tsrtd01-clone
+# DUP            se4tss4apgdb01.OLD
+# DUP            igqqas4apgdb01.OLD
+
+# OUL/RHEL 8.7    igqqa19ctest01:
+# OUL/RHEL 8.7    igqqa19ctest02:
+# OUL/RHEL 8.7    igqqacts4aapp01:
+# OUL/RHEL 8.7    igqqacts4aapp02:
+# OUL/RHEL 8.7    igqqacts4alb01:
+# OUL/RHEL 8.7    igqqacts4amq01:
+# OUL/RHEL 8.7    igqqacts4amq02:
+# OUL/RHEL 8.7    igqqacts4apgdb01:
+# OUL/RHEL 8.7    igqqaqes4aapp01:
+# OUL/RHEL 8.7    igqqaqes4aapp02:
+# OUL/RHEL 8.7    igqqaqes4alb01:
+# OUL/RHEL 8.7    igqqaqes4amq02:
+# OUL/RHEL 8.7    igqqaqes4apgdb01:
+# OUL/RHEL 8.7    igqqas4aapp02:
+# OUL/RHEL 8.7    igqqas4alb01:
+# OUL/RHEL 8.7    igqqas4amq01:
+# OUL/RHEL 8.7    igqqas4amq02:
+# OUL/RHEL 8.7    igqqas4apgdb01:
+# OUL/RHEL 8.7    se4tss4aapp02:
+# OUL/RHEL 8.7    se4tss4alb01:
+# OUL/RHEL 8.7    se4tss4amq01:
+# OUL/RHEL 8.7    se4tss4amq02:
+# OUL/RHEL 8.7    se4tss4apgdb01:
+# OUL/RHEL 8.7    seadvzenoss01:
+# OUL/RHEL 8.7    seatsjcmsljmp02:
+
+
+# PROD            igqprnmt03
+# PROD            igqprnmt04
+
+# TEMPL           ansiblerhel11
+# TEMPL           Core-OL79_12c
+# TEMPL           CORE-ol8-199
+# TEMPL           CORE-ol8-19c
+# TEMPL           Core-postgresql13
+# TEMPL           Core-RHEL69
+# TEMPL           Core-RHEL76
+# TEMPL           Erv_Storage_Test
+# TEMPL           OL73_12c
+# TEMPL           OL78
+# TEMPL           OL79Core_193
+# TEMPL           OL81Core_122
+# TEMPL           OUL68
+# TEMPL           OUL68_11204
+# TEMPL           OUL68Core_12c
+# TEMPL           oul76_postgres
+# TEMPL           packer-centos74
+# TEMPL           packer-ol79
+# TEMPL           packer-ol85
+# TEMPL           packer-rhel76-testcj
+# TEMPL           packer-rhel79
+# TEMPL           packer-rhel85
+# TEMPL           packerrhel74test
+# TEMPL            RHEL76-20190222
+# TEMPL           terraform-test
+# TEMPL           tfrwrke01.alaskaair.com
+# TEMPL           Ubuntu-20043-RKE2-Template temp
+# TEMPL           Ubuntu2004Template
+
+# VA           f5-bigiqlab-1
+# VA           f5-bigiqlabdcd-1
+# VA           f5-ltmlab-1
+# VA           f5-ltmlab-2
+# VA           f5-ltmlab-3
+# VA           Unity Connection 12.5 Upgrade VM Test
+
+#Q3    igqq3l7gw01:
+#Q3    igqq3l7gw02:
+#Q3    igqq3mqipt01:
+#Q3    igqq3mqipt02:
+
+
+# ZONE?            igqdfrke2cp01.alaskaair.com
+# ZONE?            igqdfrke2cp02.alaskaair.com
+# ZONE?            igqdfrke2cp03.alaskaair.com
+# ZONE?            igqdfrke2hw01.alaskaair.com
+# ZONE?            igqdfrke2hw02.alaskaair.com
+# ZONE?            igqdfrke2hw03.alaskaair.com
+# ZONE?            igqdfrke2utilcp01.alaskaair.com
+# ZONE?            igqdfrke2utilcp02.alaskaair.com
+# ZONE?            igqdfrke2utilcp03.alaskaair.com
+# ZONE?            igqdfrke2utilhw01.alaskaair.com
+# ZONE?            igqdfrke2utilhw02.alaskaair.com
+# ZONE?            igqdfrke2utilhw03.alaskaair.com
+# ZONE?            igqdfrke2utilw01.alaskaair.com
+# ZONE?            igqdfrke2utilw02.alaskaair.com
+# ZONE?            igqdfrke2utilw03.alaskaair.com
+# ZONE?            igqdfrke2w01.alaskaair.com
+# ZONE?            igqdfrke2w02.alaskaair.com
+# ZONE?            igqdfrke2w03.alaskaair.com
+# ZONE?           ocp-infra01.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-infra01.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-infra02.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-infra02.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-infra03.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-infra03.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-infra04.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-infra04.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-infra05.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-infra05.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-master01.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-master01.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-master02.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-master02.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-master03.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-master03.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-storage01.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-storage01.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-storage02.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-storage02.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-storage03.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-storage03.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-worker01.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-worker01.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-worker02.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-worker02.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-worker03.igq-ocp-qa.alaskaair.com
+# ZONE?           ocp-worker03.ocp-igq-qa.alaskaair.com
+# ZONE?           ocp-worker04.ocp-igq-qa.alaskaair.com
+# ZONE?           ocplab01-haproxy
+# ZONE?           ocplabbastion01
+# ZONE?            SEASBTWSMDM01
+# ZONE?            SEASBTWSMDM02
+# ZONE?            seasimqxtx19ora01
+# ZONE?            seatbcms19ora01
+# ZONE?            seatbcms8inf01
+# ZONE?            seatbcms8pws01
+# ZONE?            seatbcms8sps01
+# ZONE?            seatbcms8web01
+# ZONE?            seatccms8inf01
+# ZONE?            seatccms8pws01
+# ZONE?            seatccms8sps01
+# ZONE?            seatccms8web01
+# ZONE?            seaticms19ora01
+# ZONE?            seaticms8inf01
+# ZONE?            seaticms8pws01
+# ZONE?            seaticms8sps01
+# ZONE?            seaticms8web01
+# ZONE?            seatratx19ora01
+# ZONE?            seatrcms19ora01
+# ZONE?            seatrcms8inf01
+# ZONE?            seatrcms8pws01
+# ZONE?            seatrcms8sps01
+# ZONE?            seatrcms8web01

@@ -1,0 +1,203 @@
+all:
+  hosts:
+
+    # DONE    etcdray01:
+    # DONE    etcdray02:
+    # DONE    etcdray03:
+
+    # DONE            se4tspshcmapp01
+    # DONE            se4tspshcmapp02
+    # DONE            se4tspshcmora01
+    # DONE            se4tspshcmora02
+
+    #DONE    igqqaclintol9:
+    #DONE    igqqaadsmc01:
+    #DONE    igqqaadsdb01:
+    #DONE    igqqaclintol8:
+    #DONE    igqqamq04:
+    #DONE    igqqamq01:
+    #DONE    igqqaol8upg01:
+    #DONE    igqqaol8upg02:
+    #DONE    igqqagarbage01:
+    #DONE    igqqamq02:
+    #DONE    igqqamqipt02:
+    #DONE    igqqapshcmapp01:
+    #DONE    igqqapshcmora01:
+    #DONE    igqqapackerlx01:
+    #DONE    igqqapshcmapp02:
+    #DONE    igqqapodman01:
+    #DONE    igqqasadmin01:
+    #DONE    igqqatlinesrh7:
+    #DONE    igqqatrs4aapp02:
+    #DONE    igqqatrs4aapp01:
+    #DONE    igqqatrs4amq01:
+    #DONE    igqqatrs4amq02:
+    #DONE    se4alpshcmapp02:
+    #DONE    se4alpshcmora01:
+    #DONE    se4bdpshcmora02:
+    #DONE    se4bdpshcmapp02:
+    #DONE    igqqatrs4apgdb01:
+    #DONE    se4bdpshcmora01:
+    #DONE    se4dvpshcmora02:
+    #DONE    se4tsdbamysql01:
+    #DONE    se4tsdbapgdb01:
+    #DONE    se4dvpshcmapp01:
+    #DONE    se4tsnetadoci01:
+    #DONE    se4tsnbotpgdb01:
+    #DONE    seaalpsfinapp02:
+    #DONE    seaalpsfinora02:
+    #DONE    se4tsoradiora01:
+    #DONE    seabdpsfinora01:
+    #DONE    seadvcms8inf01:
+    #DONE    seabdpsfinora02:
+    #DONE    seadvcms8sps01:
+    #DONE    seadvcms19ora01:
+    #DONE    seabdpsfinapp02:
+    #DONE    seadvnetdock01:
+    #DONE    seadvcms8web01:
+    #DONE    seadvpsfinora10:
+    #DONE    seadvnetops01:
+    #DONE    seadvsbl19ora01:
+    #DONE    seadvsbl21ora01:
+    #DONE    seadvqtx12cor01:
+    #DONE    seaqacms19ora01:
+    #DONE    seaqacms19hora01:
+    #DONE    seaqacmsinf01:
+    #DONE    seaqacmsmon01:
+    #DONE    seaqacmspws01:
+    #DONE    seaqacmspws02:
+    #DONE    seaqacmspws03:
+    #DONE    seaqacmspws04:
+    #DONE    seaqacmsspsa01:
+    #DONE    seaqacmsspsa02:
+    #DONE    seaqacmsspsb01:
+    #DONE    seaqacmsspsc01:
+    #DONE    seaqacmsweb01:
+    #DONE    seadvpsfinapp20:
+    #DONE    seaqaewa19ora01:
+    #DONE    seaqagrem01:
+    #DONE    seaqacmsspsb02:
+    #DONE    seadvpsfinapp10:
+    #DONE    seaqainfltdb04:
+    #DONE    seaqainfltdb01:
+    #DONE    seaqainfltdb02:
+    #DONE    seaqainfltdb03:
+    #DONE    seaqapilotdb01:
+    #DONE    seaqapsfinora10:
+    #DONE    seaqapsfinapp12:
+    #DONE    SEAQATWSMDM01:
+    #DONE    seatsblobfuse01:
+    #DONE    seatscms8sps01:
+    #DONE    seatsftmsdb01:
+    #DONE    seatsere19ora01:
+    #DONE    seatsgwickrh701:
+    #DONE    seatsftmsqx01:
+    #DONE    seatskwood01:
+    #DONE    seatsjohnansi01:
+    #DONE    seatspocpg01:
+    #DONE    seatsrealtora01:
+    #DONE    seatsmon01:
+    #DONE    seatspsfinora10:
+    #DONE    seatss4aapp103:
+    #DONE    seatss4aapp102:
+    #DONE    seatss4abal101:
+    #DONE    seatspsfinapp20:
+    #DONE    seatss4apgdb201:
+    #DONE    seatss4apgdb101:
+    #DONE    seatss4amq102:
+    #DONE    seatstlinesol8:
+    #DONE    seatstlinesrh7:
+    #DONE    seatstlinesrh9:
+    #DONE    seatssbl19ora02:
+    #DONE    seatss4amq103:
+    #DONE    seatstws19ora02:
+    #DONE    seatts4apgdb401:
+
+    # DONE igqqaansitest01
+    # DONE igqqadbamysql01
+    # DONE igqqadbapgdb01
+    # DONE igqqajplanin01
+    # DONE igqqamqipt01
+    # DONE igqqatlinesol9
+    # DONE igqqatlinesrh8
+    # DONE igqqatrs4alb01
+    # DONE se4alpshcmapp01
+    # DONE se4alpshcmora02
+    # DONE se4dvpshcmapp02
+    # DONE se4dvpshcmora01
+    # DONE se4tsmq01
+    # DONE se4tsmq02
+    # DONE se4tss4autil01
+    # DONE se4tss4autil02
+    # DONE se4tstlinesrh7
+    # DONE se4tstlinesrh8
+    # DONE seaalpsfinapp01
+    # DONE seaalpsfinora01
+    # DONE seadvat19cora01
+    # DONE seadvcms19hora01
+    # DONE seadvcms8pws01
+    # DONE seadvftmsdb01
+    # DONE seadvftmsdba1
+    # DONE seadvnetjump01
+    # DONE seadvpsfinora20
+    # DONE seadvrhel703
+    # DONE seaqaatx19ora01
+    # DONE seaqacmsweb02
+    # DONE seaqadap01
+    # DONE seaqadap02
+    # DONE seaqaftmsct01
+    # DONE seaqaftmsdb01
+    # DONE seaqajcmsljmp02
+    # DONE seaqapilotct01
+    # DONE seaqapsfinapp10
+    # DONE seaqapsfinapp11
+    # DONE seaqapsfinapp13
+    # DONE seaqaqxtx12co01
+    # DONE seaqarealtora01
+    # DONE seaqasbl19ora01
+    # DONE seaqasbl19ora02
+    # DONE seaqatws19ora01
+    # DONE SEAQATWSMDM02
+    # DONE seatsastraxtngdb01
+    # DONE seatsatx19ora01
+    # DONE seatsbiodilx01
+    # DONE seatsclint19cora01
+    # DONE seatscms19ora01
+    # DONE seatscms8inf01
+    # DONE seatscms8pws01
+    # DONE seatscms8web01
+    # DONE seatsct19cora02
+    # DONE seatsempltrdb01
+    # DONE seatsewa19ora01
+    # DONE seatsftms7371
+    # DONE seatsinfltdb01
+    # DONE seatsiwsmdm01
+    # DONE seatsjcts4aaz01
+    # DONE seatsjcts4aaz02
+    # DONE seatskwood02
+    # DONE seatsol7repo01
+    # DONE seatspilotdb01
+    # DONE seatspsfinapp10
+    # DONE seatspsfinora20
+    # DONE seatsqtx19cor01
+    # DONE seatsqtx19ora01
+    # DONE seatss4a19ora01
+    # DONE seatss4aapp101
+    # DONE seatss4aapp104
+    # DONE seatss4abal201
+    # DONE seatss4amq101
+    # DONE seatss4amq104
+    # DONE seatss4anag01
+    # DONE seatss4autl101
+    # DONE seatssatsrv02
+    # DONE seatssbl19ora01
+    # DONE seatssumolx02
+    # DONE seatstws19ora01
+    # DONE seatsytang01
+    # DONE igqqaansitest01
+    # DONE igqqadbamysql01
+    # DONE seatscms8web01
+    # DONE seatsytang01
+
+# DONE    igqqadramysql01:
+# DONE    seatsqtx12cor01:

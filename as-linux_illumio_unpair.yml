@@ -1,0 +1,27 @@
+---
+#
+#
+# CAUTION: This playbook just force-feeds the "unpair" directive to the illumio-ven-ctl agent interface, without doing 
+#          any error checking; it really should have some sort of pre- and post-checks added.
+# 
+# USE AT YOUR OWN RISK
+#
+- name: unpair Illumio VEN
+  hosts: illumiopoc
+  become: yes
+  tasks:
+    - name: do the thing 1
+      command: /opt/illumio_ven/illumio-ven-ctl deactivate
+
+    -name: do the thing 2
+      command: /opt/illumio_ven/illumio-ven-ctl unpair saved
+
+    - name: remove the onboarding script
+      file: 
+      state: absent
+      path: /export/home/mnottage/onboarding.sh
+
+    - name: Delete content & directory
+      file:
+      state: absent
+      path: /opt/illumio_ven/ 

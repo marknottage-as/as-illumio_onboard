@@ -1,0 +1,121 @@
+    - name: invoke package manager to check prereqs for OracleLinux 8
+      yum:
+        name: "{{ item }}"
+        state: installed
+      loop:
+         - "curl"
+         - "net-tools"
+         - "bind-utils"
+         - "libnfnetlink"
+         - "libmnl"
+         - "libcap"
+         - "gmp"
+         - "sed" 
+      ignore_errors: true
+      when: (ansible_distribution_file_variety == "OracleLinux" and ansible_distribution_major_version == "8")
+
+    - name: invoke package manager to check prereqs for OracleLinux 7
+      yum:
+        name: "{{ item }}"
+        state: installed
+      loop:
+         - "curl"
+         - "net-tools"
+         - "bind-utils"
+         - "iptables-ipv6" # (1.4.7-16 minimum or later)
+         - "iptables"      # (1.4.7-16 minimum or later)
+         - "ipset"         # (6.11-4 minimum or later)
+         - "libnfnetlink"
+         - "libmnl"
+         - "libcap"
+         - "gmp"
+         - "sed"
+      ignore_errors: true
+      when: (ansible_distribution_file_variety == "OracleLinux" and ansible_distribution_major_version == "7")
+
+    - name: invoke package manager to check prereqs for OracleLinux 6
+      yum:
+        name: "{{ item }}"
+        state: installed
+      loop:
+         - "curl"
+         - "net-tools"
+         - "bind-utils"
+         - "iptables-ipv6" # (1.4.7-16 minimum or later)
+         - "iptables"      # (1.4.7-16 minimum or later)
+         - "ipset"         # (6.11-4 minimum or later)
+         - "libnfnetlink"
+         - "libmnl"
+         - "libcap"
+         - "gmp"
+         - "sed" 
+      ignore_errors: true
+      when: (ansible_distribution_file_variety == "OracleLinux" and ansible_distribution_major_version == "6")
+
+    - name: invoke package manager to check prereqs for RedHat 9
+      yum:
+        name: "{{ item }}"
+        state: installed
+      loop:
+         - "curl"
+         - "net-tools"
+         - "bind-utils"
+         - "libnfnetlink"
+         - "libmnl"
+         - "libcap"
+         - "gmp"
+         - "sed" 
+      ignore_errors: true
+      when: (ansible_distribution_file_variety == "RedHat" and ansible_distribution_major_version == "9")
+
+    - name: invoke package manager to check prereqs for RedHat 8
+      yum:
+        name: "{{ item }}"
+        state: installed
+      loop:
+         - "curl"
+         - "net-tools"
+         - "bind-utils"
+         - "libnfnetlink"
+         - "libmnl"
+         - "libcap"
+         - "gmp"
+         - "sed" 
+      ignore_errors: true
+      when: (ansible_distribution_file_variety == "RedHat" and ansible_distribution_major_version == "8")
+
+    - name: invoke package manager to check prereqs for RedHat 7
+      yum:
+        name: "{{ item }}"
+        state: installed
+      loop:
+         - "curl"
+         - "net-tools"
+         - "bind-utils"
+         - "iptables"      # (1.4.7-16 minimum or later)
+         - "ipset"         # (6.11-4 minimum or later)
+         - "libnfnetlink"
+         - "libmnl"
+         - "libcap"
+         - "gmp"
+         - "sed" 
+      ignore_errors: true
+      when: (ansible_distribution_file_variety == "RedHat" and ansible_distribution_major_version == "7")
+
+    - name: invoke package manager to check prereqs for RedHat 6
+      yum:
+        name: "{{ item }}"
+        state: installed
+      loop:
+         - "curl"
+         - "net-tools"
+         - "bind-utils"
+         - "iptables"      # (1.4.7-16 minimum or later)
+         - "ipset"         # (6.11-4 minimum or later)
+         - "libnfnetlink"
+         - "libmnl"
+         - "libcap"
+         - "gmp"
+         - "sed" 
+      ignore_errors: true
+      when: (ansible_distribution_file_variety == "RedHat" and ansible_distribution_major_version == "6")

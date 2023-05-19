@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: yes
+  become: false
+  tasks:
+  - name: Distribution
+    debug: msg="{{ ansible_distribution }} {{ ansible_distribution_version }}" 
+#  - name: Dist. Version
+#    debug: msg="{{ ansible_distribution_version }}"
+#  - name: Dist. Maj. Version
+#    debug: msg="{{ ansible_distribution_major_version }}"

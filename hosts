@@ -1,0 +1,307 @@
+---
+all:
+  hosts:
+    seatccms19ora01:
+
+# NO ACCESS    igqqa-ns01:
+# NO ACCESS    igqqa-ns02:
+# DECOM?    igqqaa2dev01:
+# DECOM?    igqqaadmlx1:
+    igqqabaa01: # devopsconfig
+# NO ACCESS    igqqacarkpsmp01:
+# NO ACCESS    igqqacarkpsmp02:
+# DECOM?    igqqacpmtest01:
+    igqqacts4anag01:
+    igqqadwcentos01.alaskaair.com: # devopsconfig
+    igqqafltopsdb01: # root
+    igqqag2n77a01: # devopsconfig
+    igqqagarbage02: # devopsconfig
+    igqqahabcon01: # devopsconfig
+    igqqahabcon02: # devopsconfig /home/devopsconfig
+    igqqahabcon03: # devopsconfig /home/devopsconfig
+# DECOM?    igqqajbls01:
+# DECOM?    igqqajpbtsp01.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpbtsp01.ocp-jp-qa.alaskaair.com:
+# DECOM?    igqqajpcmpt01.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpcmpt02.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpcmpt03.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpcmpt04.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpcmpt05.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpinf01.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpinf02.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpinf03.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpmstr01.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpmstr02.ocp-igq-jp-qa.alaskaair.com:
+# DECOM?    igqqajpmstr03.ocp-igq-jp-qa.alaskaair.com:
+    igqqak8sak01: # devopsconfig /home/devopsconfig
+    igqqak8sak02: # devopsconfig /home/devopsconfig
+    igqqak8sak03: # devopsconfig /home/devopsconfig
+    igqqak8sak04:
+# FW?    igqqak8sapp01:
+# FW?    igqqak8sapp02:
+# FW?    igqqak8sapp03:
+# FW?    igqqak8sapp04:
+# FW?    igqqak8sapp05:
+# FW?    igqqak8sapp06:
+# FW?    igqqak8setcd01:
+# FW?    igqqak8setcd02:
+# FW?    igqqak8setcd03:
+# FW?    igqqak8setcd04:
+# FW?    igqqak8setcd05:
+# FW?    igqqak8shab01:
+# FW?    igqqak8shab02:
+# FW?    igqqak8shab03:
+# FW?    igqqak8shab06:
+# NO CREDS    igqqal7gw01:
+# NO CREDS    igqqal7gw02:
+    igqqamq03: # devopsconfigs /export/home/devopsconfig
+# NO CREDS    igqqanxps01:
+    igqqapromnw01:
+# OUL/RHEL 8.7    igqqaqes4amq01:
+# DECOM?    igqqaquascan01:
+# NO CREDS    igqqarke2cp01.alaskaair.com:
+    igqqarke2cp02.alaskaair.com:
+    igqqarke2cp03.alaskaair.com:
+    igqqarke2hw01.alaskaair.com:
+    igqqarke2hw02.alaskaair.com:
+    igqqarke2hw03.alaskaair.com:
+    igqqarke2utilcp01.alaskaair.com:
+    igqqarke2utilcp02.alaskaair.com:
+    igqqarke2utilcp03.alaskaair.com:
+    igqqarke2utilhw01.alaskaair.com:
+    igqqarke2utilhw02.alaskaair.com:
+    igqqarke2utilhw03.alaskaair.com:
+    igqqarke2utilw01.alaskaair.com:
+    igqqarke2utilw02.alaskaair.com:
+    igqqarke2utilw03.alaskaair.com:
+    igqqarke2utilw04.alaskaair.com:
+    igqqarke2utilw05.alaskaair.com:
+    igqqarke2w01.alaskaair.com:
+    igqqarke2w02.alaskaair.com:
+    igqqarke2w03.alaskaair.com:
+    igqqarke2w04.alaskaair.com:
+    igqqarke2w05.alaskaair.com:
+# OUL/RHEL 8.7    igqqas4aapp01:
+    igqqasaucelabs01:
+    igqqasnipe01:
+    igqqasqltst01:
+    igqqatfbuild01:
+    igqqatfbuild02:
+    igqqatlines19c:
+    igqqatlinesrh6:
+    igqqatpapp0101:
+    igqqavra01:
+    igqqavrapig28:
+    igqqaxmr01:
+    igqtsrke2cp01.alaskaair.com:
+    igqtsrke2cp02.alaskaair.com:
+    igqtsrke2cp03.alaskaair.com:
+    igqtsrke2hw01.alaskaair.com:
+    igqtsrke2hw02.alaskaair.com:
+    igqtsrke2hw03.alaskaair.com:
+    igqtsrke2w01.alaskaair.com:
+    igqtsrke2w02.alaskaair.com:
+    igqtsrke2w03.alaskaair.com:
+    igqtsrke2w04.alaskaair.com:
+    igqtsrke2w05.alaskaair.com:
+    raytest-cp-a038796b-2jjct:
+    raytest-cp-a038796b-xkwh8:
+    raytest-cp-a038796b-xmfgm:
+    se4dvfltopsdb01:
+    se4shxtest04:
+    se4t3ddos01:
+    se4t3l7gw01:
+    se4t3l7portal01:
+    se4testcj:
+    se4tsapetcd01:
+    se4tsapetcd02:
+    se4tsapetcd03:
+    se4tsapetcd04:
+    se4tsapetcd05:
+    se4tsawx01:
+    se4tscscovirl01:
+    se4tsfltopsdb01:
+    se4tsgenhunt03a:
+    se4tsgenhunt04a:
+    se4tsgrckali01:
+    se4tsl7gw01:
+    se4tsl7portal01:
+    se4tslghthous01:
+    se4tsnbot01:
+    se4tsnxps01:
+    se4tsrtd01:
+# OUL/RHEL 8.7    se4tss4aapp01:
+    se4tstower01:
+    se4tstower02:
+    se4tstower03:
+    seadv0111tf01:
+    seadvappardo01:
+    seadvartifactapp01:
+    seadvaschmitz01:
+    seadvbootstrapp01:
+    seadvchefautoapp01:
+    seadvchefautoapp02:
+    seadvchefsapp01:
+    seadvconsulapp01:
+    seadvconsulapp02:
+    seadvconsulapp03:
+    seadvduoapp01:
+    seadvduoapp02:
+    seadvduoapp03:
+    seadvfltopsdb01:
+    seadviselab01:
+    seadviselab02:
+    seadvkubesvr01:
+    seadvkubesvr02:
+    seadvkubesvr03:
+    seadvkubesvr04:
+    seadvlbotapp01:
+    seadvlnuxtype01:
+    seadvlnuxtype02:
+    seadvopig02:
+    seadvpardotest01:
+    seadvportageapp01:
+    seadvrancherapp01:
+    seadvreceiptapp01:
+    seadvrhel601:
+    seadvrhelray01:
+    seadvrunnerutil01:
+    seadvrunnerutil02:
+    seadvs4ads01:
+    seadvsbl8hdb01:
+    seadvtdbdb01:
+    seadvtescnts01:
+    seadvtescnts02:
+    seadvvaultsvr01:
+    seadvvaultsvr02:
+    seadvvaultsvr03:
+    seadvvaultsvr04:
+    seadvvaultsvr05:
+    seadvvstsbldr01:
+    seadvvststst01:
+    seaprvrliqa01:
+    seaqa02s4aapp01:
+    seaqa02s4aapp02:
+    seaqa02s4aapp03:
+    seaqa02s4adb01:
+    seaqaacs01:
+    seaqaairprice01:
+    seaqabitws01:
+    seaqacmfdb01:
+    seaqacms19ora02:
+    seaqadba01:
+    seaqadwsdbxdb01:
+    seaqaemaestro01:
+    seaqaewalletdb01:
+    seaqafltopsdb03:
+    seaqafltopsdb04:
+    seaqafltopsdb05:
+    seaqafltopsdb06:
+    seaqafltopsdb07:
+    seaqafltopsdb08:
+    seaqafltopsme01:
+    seaqalxrevmgt01:
+    seaqapsmdb01:
+    seaqavchealth01:
+    seaqavdiuagisp1:
+    seaqavdiuagisp1_2012:
+    seaqavdiuaglab1:
+    seaqavdiuaglab1_2012:
+    seaqavdiuagtul1:
+    seaqavdiuagtul1_2012:
+    seaqavdivc01:
+    seaqavdivcpsc01:
+    seaqavinciapp01:
+    seaqavlanpig73:
+    seaqavli02:
+    seaqavmci01:
+    seaqavrbc01:
+    seaqaw3cmsinf01:
+    seaqaw3cmsmon01:
+    seaqaw3cmspws01:
+    seaqaw3cmspws02:
+    seaqaw3cmspws03:
+    seaqaw3cmspws04:
+    seaqaw3cmsspsa01:
+    seaqaw3cmsspsa02:
+    seaqaw3cmsspsb01:
+    seaqaw3cmsspsb02:
+    seaqaw3cmsspsc01:
+    seaqaw3cmsweb01:
+    seaqaw3cmsweb02:
+    seaqaw3jcmsljmp01:
+    seats-ve-ltm-1a:
+    seatsairprice01:
+    seatsairvisapp01:
+    seatsairvisdb01:
+    seatsarp12cor01:
+    seatsastraxtngdb03:
+    seatsautomateapp01:
+    seatsbomgar01:
+    seatsclint12cdb01:
+    seatsclint12cdb02:
+    seatscn135vid01:
+    seatscntsat01:
+    seatscrewjcte01:
+    seatscymptom01:
+    seatsdmc01:
+    seatsfaajaws01:
+    seatsfltopsdb01:
+    seatsgpdb01:
+    seatsinfrmdb01:
+    seatsmfapoc01:
+# DISK FULL    seatsnetansi01:
+    seatsnetappvasa01:
+    seatsoam12cdb01:
+    seatsoptmodb01:
+    seatsoul6repo01:
+    seatspocpg02:
+    seatspsmdb01:
+    seatsqxtraxdb01.DO.NOT.DELETE:
+    seatsrh5repo01:
+    seatsrh6repo01:
+    seatsrh7repo01:
+    seatsrheltes01:
+    seatsrhnsat02:
+    seatss4actapp01:
+    seatss4actapp02:
+    seatss4actdb01:
+    seatss4amq202:
+    seatss4atrapp01a:
+    seatss4atrapp02:
+    seatss4atrapp03:
+    seatss4atrdb01a:
+    seatssfelner06:
+    seatssfelner07:
+    seatssfelner08:
+    seatssfelner09:
+    seatstbomgar01:
+    seatstlinesrh6:
+    seatstlinesrh8:
+    seatstwsdb02:
+    seatstwsmdm01:
+    seatstwsmdm02:
+    seatsubuntuapp01:
+    seatsucsctrl01:
+    seatsvbigip2:
+    seatsvccnode01:
+    seatsvccsvr01:
+    seatsvisopsct01:
+    seatsworkflow1:
+    seatszensarl01:
+    sigqqaaquascan01.alaskaair.com:
+    sigqqaaquascan02.alaskaair.com:
+    sigqqaaquascan03.alaskaair.com:
+    sigqqaaquascan04.alaskaair.com:
+    sigqqajspl01.alaskaair.com:
+    sigqqajspl02.alaskaair.com:
+
+
+  vars:
+# our preference will be to use the "ansible" service account
+#    ansible_user: ansible
+#    ansible_user: root
+#    ansible_user: devopsconfig
+    ansible_user: mnottage
+# attempting to implement this setting in ansible.cfg
+    ansible_ssh_extra_args: -o StrictHostKeyChecking=no
