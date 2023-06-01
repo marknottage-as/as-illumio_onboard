@@ -119,3 +119,11 @@
          - "sed" 
       ignore_errors: true
       when: (ansible_distribution_file_variety == "RedHat" and ansible_distribution_major_version == "6")
+
+    - name: invoke ansible-replace to increase SYS_MAX_UID for RedHat 8
+      replace:
+        path: /etc/login.defs
+        regexp: '(^SYS_UID_MAX)(.*)$'
+        replace: 'SYS_UID_MAX     105'
+        backup: yes
+      when: (ansible_distribution_file_variety == "RedHat" and ansible_distribution_major_version == "8")
