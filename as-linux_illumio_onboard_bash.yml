@@ -3,16 +3,27 @@
   hosts: all
   become: yes
   tasks:
-    - include: ./roles/prereqs/tasks/main.yml
+    - name: get package facts
+      package_facts:
+        manager: auto
 
-#- name: push onboarding script and run it
-#  hosts: all
-#  become: yes
-#  tasks:
+    - name: check for containerization platforms
+      command: echo {{ item }}
+      loop: [ 'podman', 'kubectl', 'docker-ce' ]
+      when:
+        - "'podman' in ansible_facts['packages']"
+        - "'kubectl' in ansible_facts['packages']"
+        - "'docker-ce' in ansible_facts['packages']"
+      register: containers_found
 
-    - name: push the script
-      copy: src=./files/onboarding.sh dest=/export/home/{{  ansible_user }} mode=0777
+    - block:
+        # check for Illumio VEN pre-requisites
+        - include: ./roles/prereqs/tasks/main.yml
 
-    - name: onboarding script
-      command: sh /export/home/{{  ansible_user }}/onboarding.sh
+        # if pre-requisites check out, push the script and run it
+        - name: push the script
+          copy: src=./files/onboarding.sh dest=/export/home/{{  ansible_user }} mode=0777
 
+        - name: onboarding script
+          command: sh /export/home/{{  ansible_user }}/onboarding.sh
+      when: containers_found is undefined

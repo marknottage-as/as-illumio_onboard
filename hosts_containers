@@ -1,0 +1,19 @@
+---
+all:
+  hosts:
+    seatscmsldap01:     #EXEMPT-PODMAN
+    se4tsawx01:
+      ansible_host: 10.34.130.24
+
+  vars:
+# our preference will be to use the "ansible" service account
+#    ansible_user: ansible
+#    ansible_user: root
+    ansible_user: devopsconfig
+#    ansible_user: mnottage
+# attempting to implement this setting in ansible.cfg
+    ansible_ssh_extra_args: -o StrictHostKeyChecking=no
+
+
+
+
