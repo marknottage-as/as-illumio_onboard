@@ -1,0 +1,2546 @@
+{
+    "_meta": {
+        "hostvars": {
+            "": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "",
+                "ansible_host": ""
+            },
+            "etcdray01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "etcdray01",
+                "ansible_host": "10.80.102.206"
+            },
+            "etcdray02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "etcdray02",
+                "ansible_host": "10.80.102.207"
+            },
+            "etcdray03": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "etcdray03",
+                "ansible_host": "10.80.102.205"
+            },
+            "igqprnmt01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqprnmt01",
+                "ansible_host": "10.80.130.37"
+            },
+            "igqprnmt02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqprnmt02",
+                "ansible_host": "10.80.130.38"
+            },
+            "igqq3l7gw01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqq3l7gw01.alaskaair.com",
+                "ansible_host": "10.24.67.20"
+            },
+            "igqq3l7gw02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqq3l7gw02.alaskaair.com",
+                "ansible_host": "10.24.67.21"
+            },
+            "igqq3labcucunitypub01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqq3labcucunitypub01",
+                "ansible_host": "10.24.20.19"
+            },
+            "igqq3mqipt01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqq3mqipt01",
+                "ansible_host": "10.24.72.22"
+            },
+            "igqq3mqipt02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqq3mqipt02",
+                "ansible_host": "10.24.72.23"
+            },
+            "igqqa19ctest01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqa19ctest01.alaskaair.com",
+                "ansible_host": "159.49.43.76"
+            },
+            "igqqa19ctest02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqa19ctest02.alaskaair.com",
+                "ansible_host": "159.49.43.92"
+            },
+            "igqqaadsdb01.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaadsdb01.aagqa.net",
+                "ansible_host": "10.24.129.40"
+            },
+            "igqqaadsmc01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaadsmc01.alaskaair.com",
+                "ansible_host": "10.24.20.58"
+            },
+            "igqqaansitest01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaansitest01.alaskaair.com",
+                "ansible_host": "10.80.96.23"
+            },
+            "igqqabaa01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqabaa01",
+                "ansible_host": "10.80.102.93"
+            },
+            "igqqacarkpsmp01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqacarkpsmp01",
+                "ansible_host": "10.24.24.17"
+            },
+            "igqqacarkpsmp02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqacarkpsmp02",
+                "ansible_host": "10.24.24.18"
+            },
+            "igqqaclintol8.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaclintol8.alaskaair.com",
+                "ansible_host": "159.49.196.60"
+            },
+            "igqqaclintol9.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaclintol9.alaskaair.com",
+                "ansible_host": "159.49.43.51"
+            },
+            "igqqacts4aapp01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqacts4aapp01.alaskaair.com",
+                "ansible_host": "10.24.20.43"
+            },
+            "igqqacts4aapp02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqacts4aapp02.alaskaair.com",
+                "ansible_host": "10.24.20.44"
+            },
+            "igqqacts4alb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqacts4alb01.alaskaair.com",
+                "ansible_host": "10.24.20.47"
+            },
+            "igqqacts4amq01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqacts4amq01.alaskaair.com",
+                "ansible_host": "10.24.20.45"
+            },
+            "igqqacts4amq02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqacts4amq02.alaskaair.com",
+                "ansible_host": "10.24.20.46"
+            },
+            "igqqacts4anag01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqacts4anag01.alaskaair.com",
+                "ansible_host": "10.24.20.70"
+            },
+            "igqqacts4apgdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqacts4apgdb01.alaskaair.com",
+                "ansible_host": "10.24.20.40"
+            },
+            "igqqadbamysql01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqadbamysql01.alaskaair.com",
+                "ansible_host": "10.24.20.11"
+            },
+            "igqqadbapgdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqadbapgdb01.alaskaair.com",
+                "ansible_host": "159.49.196.80"
+            },
+            "igqqadramysql01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqadramysql01.alaskaair.com",
+                "ansible_host": "159.49.196.81"
+            },
+            "igqqadwcentos01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqadwcentos01",
+                "ansible_host": "10.80.103.99"
+            },
+            "igqqafltopsdb01.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqafltopsdb01.aagqa.net",
+                "ansible_host": "10.24.131.20"
+            },
+            "igqqag2n77a01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqag2n77a01",
+                "ansible_host": "172.20.77.12"
+            },
+            "igqqagarbage01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqagarbage01.alaskaair.com",
+                "ansible_host": "10.80.96.97"
+            },
+            "igqqagarbage02.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqagarbage02.aagqa.net",
+                "ansible_host": "10.24.129.22"
+            },
+            "igqqahabcon01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqahabcon01",
+                "ansible_host": "10.80.102.166"
+            },
+            "igqqahabcon02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqahabcon02",
+                "ansible_host": "10.80.100.63"
+            },
+            "igqqahabcon03": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqahabcon03",
+                "ansible_host": "10.80.102.165"
+            },
+            "igqqajbls01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajbls01",
+                "ansible_host": "10.80.102.93"
+            },
+            "igqqajpcmpt01.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpcmpt01.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.105"
+            },
+            "igqqajpcmpt02.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpcmpt02.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.106"
+            },
+            "igqqajpcmpt03.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpcmpt03.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.107"
+            },
+            "igqqajpcmpt04.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpcmpt04.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.108"
+            },
+            "igqqajpcmpt05.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpcmpt05.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.109"
+            },
+            "igqqajpinf01.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpinf01.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.110"
+            },
+            "igqqajpinf02.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpinf02.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.111"
+            },
+            "igqqajpinf03.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpinf03.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.112"
+            },
+            "igqqajplanin01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajplanin01.alaskaair.com",
+                "ansible_host": "10.80.97.146"
+            },
+            "igqqajpmstr01.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpmstr01.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.102"
+            },
+            "igqqajpmstr02.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpmstr02.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.103"
+            },
+            "igqqajpmstr03.ocp-igq-jp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqajpmstr03.ocp-igq-jp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.104"
+            },
+            "igqqak8sak01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqak8sak01",
+                "ansible_host": "10.80.102.170"
+            },
+            "igqqak8sak02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqak8sak02",
+                "ansible_host": "10.80.100.231"
+            },
+            "igqqak8sak03": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqak8sak03",
+                "ansible_host": "10.80.102.171"
+            },
+            "igqqak8shab01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqak8shab01",
+                "ansible_host": "10.80.102.224"
+            },
+            "igqqak8shab02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqak8shab02",
+                "ansible_host": "10.80.102.241"
+            },
+            "igqqak8shab03": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqak8shab03",
+                "ansible_host": "10.80.102.103"
+            },
+            "igqqak8shab06": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqak8shab06",
+                "ansible_host": "10.80.102.25"
+            },
+            "igqqal7gw01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqal7gw01.alaskaair.com",
+                "ansible_host": "10.24.161.20"
+            },
+            "igqqal7gw02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqal7gw02.alaskaair.com",
+                "ansible_host": "10.24.161.21"
+            },
+            "igqqamq01.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqamq01.aagqa.net",
+                "ansible_host": "10.24.12.12"
+            },
+            "igqqamq02.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqamq02.aagqa.net",
+                "ansible_host": "10.24.12.13"
+            },
+            "igqqamq03.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqamq03.aagqa.net",
+                "ansible_host": "10.24.12.17"
+            },
+            "igqqamq04.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqamq04.aagqa.net",
+                "ansible_host": "10.24.12.18"
+            },
+            "igqqamqipt01.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqamqipt01.aagqa.net",
+                "ansible_host": "10.24.12.10"
+            },
+            "igqqamqipt02.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqamqipt02.aagqa.net",
+                "ansible_host": "10.24.12.11"
+            },
+            "igqqaol8upg01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaol8upg01.alaskaair.com",
+                "ansible_host": "10.24.129.21"
+            },
+            "igqqaol8upg02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaol8upg02.alaskaair.com",
+                "ansible_host": "10.80.96.208"
+            },
+            "igqqapackerlx01.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqapackerlx01.aagqa.net",
+                "ansible_host": "10.24.204.43"
+            },
+            "igqqapodman01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqapodman01",
+                "ansible_host": "10.80.103.78"
+            },
+            "igqqapromnw01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqapromnw01",
+                "ansible_host": "10.80.99.153"
+            },
+            "igqqapshcmapp01.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqapshcmapp01.aagqa.net",
+                "ansible_host": "10.24.144.11"
+            },
+            "igqqapshcmapp02.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqapshcmapp02.aagqa.net",
+                "ansible_host": "10.24.144.12"
+            },
+            "igqqapshcmora01.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqapshcmora01.aagqa.net",
+                "ansible_host": "10.24.129.11"
+            },
+            "igqqaqes4aapp01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaqes4aapp01.alaskaair.com",
+                "ansible_host": "10.24.20.48"
+            },
+            "igqqaqes4aapp02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaqes4aapp02.alaskaair.com",
+                "ansible_host": "10.24.20.49"
+            },
+            "igqqaqes4alb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaqes4alb01.alaskaair.com",
+                "ansible_host": "10.24.20.52"
+            },
+            "igqqaqes4amq01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaqes4amq01.alaskaair.com",
+                "ansible_host": "10.24.20.50"
+            },
+            "igqqaqes4amq02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaqes4amq02.alaskaair.com",
+                "ansible_host": "10.24.20.51"
+            },
+            "igqqaqes4apgdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqaqes4apgdb01.alaskaair.com",
+                "ansible_host": "10.24.20.41"
+            },
+            "igqqas4aapp01.airgroup.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqas4aapp01.airgroup.alaskaair.com",
+                "ansible_host": "10.24.20.53"
+            },
+            "igqqas4aapp02.airgroup.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqas4aapp02.airgroup.alaskaair.com",
+                "ansible_host": "10.24.20.54"
+            },
+            "igqqas4alb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqas4alb01.alaskaair.com",
+                "ansible_host": "10.24.20.57"
+            },
+            "igqqas4amq01.airgroup.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqas4amq01.airgroup.alaskaair.com",
+                "ansible_host": "10.24.20.55"
+            },
+            "igqqas4amq02.airgroup.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqas4amq02.airgroup.alaskaair.com",
+                "ansible_host": "10.24.20.56"
+            },
+            "igqqas4apgdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqas4apgdb01.alaskaair.com",
+                "ansible_host": "10.24.20.37"
+            },
+            "igqqasadmin01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqasadmin01.alaskaair.com",
+                "ansible_host": "10.80.164.119"
+            },
+            "igqqasaucelabs01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqasaucelabs01",
+                "ansible_host": "10.80.103.24"
+            },
+            "igqqasqltst01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqasqltst01",
+                "ansible_host": "10.80.102.94"
+            },
+            "igqqatfbuild01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatfbuild01",
+                "ansible_host": "10.80.100.102"
+            },
+            "igqqatfbuild02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatfbuild02",
+                "ansible_host": "10.80.100.48"
+            },
+            "igqqatlinesol9": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatlinesol9",
+                "ansible_host": "159.49.43.50"
+            },
+            "igqqatlinesrh6.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatlinesrh6.aagqa.net",
+                "ansible_host": "10.24.192.50"
+            },
+            "igqqatlinesrh7.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatlinesrh7.aagqa.net",
+                "ansible_host": "10.24.192.51"
+            },
+            "igqqatlinesrh8.aagqa.net": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatlinesrh8.aagqa.net",
+                "ansible_host": "10.24.192.52"
+            },
+            "igqqatpapp0101": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatpapp0101",
+                "ansible_host": "10.80.102.164"
+            },
+            "igqqatrs4aapp01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatrs4aapp01.alaskaair.com",
+                "ansible_host": "10.24.20.60"
+            },
+            "igqqatrs4aapp02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatrs4aapp02.alaskaair.com",
+                "ansible_host": "10.24.20.61"
+            },
+            "igqqatrs4alb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatrs4alb01.alaskaair.com",
+                "ansible_host": "10.24.20.64"
+            },
+            "igqqatrs4amq01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatrs4amq01.alaskaair.com",
+                "ansible_host": "10.24.20.62"
+            },
+            "igqqatrs4amq02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatrs4amq02.alaskaair.com",
+                "ansible_host": "10.24.20.63"
+            },
+            "igqqatrs4apgdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqatrs4apgdb01.alaskaair.com",
+                "ansible_host": "10.24.20.42"
+            },
+            "igqqavlanpig01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqavlanpig01",
+                "ansible_host": ""
+            },
+            "igqqavrapig28": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqqavrapig28",
+                "ansible_host": "10.80.96.32"
+            },
+            "igqvvacs01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "igqvvacs01",
+                "ansible_host": "10.80.74.185"
+            },
+            "localhost.localdomain": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "localhost.localdomain",
+                "ansible_host": "10.34.130.210"
+            },
+            "ns": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ns",
+                "ansible_host": "10.80.98.224"
+            },
+            "ocp-infra01.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-infra01.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.28"
+            },
+            "ocp-infra02.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-infra02.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.27"
+            },
+            "ocp-infra03.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-infra03.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.64"
+            },
+            "ocp-infra04.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-infra04.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.65"
+            },
+            "ocp-infra05.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-infra05.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.66"
+            },
+            "ocp-master01.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-master01.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.18"
+            },
+            "ocp-master02.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-master02.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.17"
+            },
+            "ocp-master03.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-master03.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.19"
+            },
+            "ocp-storage01.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-storage01.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.26"
+            },
+            "ocp-storage02.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-storage02.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.25"
+            },
+            "ocp-storage03.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-storage03.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.24"
+            },
+            "ocp-worker01.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-worker01.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.21"
+            },
+            "ocp-worker02.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-worker02.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.23"
+            },
+            "ocp-worker03.igq-ocp-qa.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocp-worker03.igq-ocp-qa.alaskaair.com",
+                "ansible_host": "10.80.164.22"
+            },
+            "ocplabbastion01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ocplabbastion01",
+                "ansible_host": "10.80.103.57"
+            },
+            "ol77core_122": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "ol77core_122",
+                "ansible_host": "159.49.43.58"
+            },
+            "se4alpshcmapp01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4alpshcmapp01.aagqa.net",
+                "ansible_host": "10.34.144.11"
+            },
+            "se4alpshcmapp02.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4alpshcmapp02.aagqa.net",
+                "ansible_host": "10.34.144.27"
+            },
+            "se4alpshcmora01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4alpshcmora01.aagqa.net",
+                "ansible_host": "10.34.129.22"
+            },
+            "se4alpshcmora02.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4alpshcmora02.alaskaair.com",
+                "ansible_host": "10.34.129.26"
+            },
+            "se4bdpshcmapp02.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4bdpshcmapp02.aagqa.net",
+                "ansible_host": "10.34.144.29"
+            },
+            "se4bdpshcmora01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4bdpshcmora01.aagqa.net",
+                "ansible_host": "10.34.129.21"
+            },
+            "se4bdpshcmora02.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4bdpshcmora02.aagqa.net",
+                "ansible_host": "10.34.129.25"
+            },
+            "se4dvfltopsdb01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4dvfltopsdb01.aagqa.net",
+                "ansible_host": "10.34.131.23"
+            },
+            "se4dvpshcmapp01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4dvpshcmapp01.aagqa.net",
+                "ansible_host": "10.34.144.12"
+            },
+            "se4dvpshcmapp02.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4dvpshcmapp02.aagqa.net",
+                "ansible_host": "10.34.144.18"
+            },
+            "se4dvpshcmora01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4dvpshcmora01.aagqa.net",
+                "ansible_host": "10.34.129.23"
+            },
+            "se4dvpshcmora02.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4dvpshcmora02.aagqa.net",
+                "ansible_host": "10.34.129.16"
+            },
+            "se4shxtest04": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4shxtest04",
+                "ansible_host": "10.34.20.44"
+            },
+            "se4t3ddos01.aagq3.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4t3ddos01.aagq3.net",
+                "ansible_host": "159.49.93.2"
+            },
+            "se4t3l7gw01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4t3l7gw01.alaskaair.com",
+                "ansible_host": "10.34.67.20"
+            },
+            "se4t3l7portal01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4t3l7portal01.alaskaair.com",
+                "ansible_host": "10.34.67.21"
+            },
+            "se4testcj.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4testcj.alaskaair.com",
+                "ansible_host": ""
+            },
+            "se4tsapetcd01": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsapetcd01",
+                "ansible_host": "10.34.130.13"
+            },
+            "se4tsapetcd02": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsapetcd02",
+                "ansible_host": "10.34.130.14"
+            },
+            "se4tsapetcd03": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsapetcd03",
+                "ansible_host": "10.34.130.15"
+            },
+            "se4tsapetcd04": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsapetcd04",
+                "ansible_host": "10.34.130.16"
+            },
+            "se4tsapetcd05": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsapetcd05",
+                "ansible_host": "10.34.130.17"
+            },
+            "se4tsawx01": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsawx01",
+                "ansible_host": "10.34.130.24"
+            },
+            "se4tsdbamysql01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsdbamysql01.alaskaair.com",
+                "ansible_host": "10.34.20.14"
+            },
+            "se4tsdbapgdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "se4tsdbapgdb01.alaskaair.com",
+                "ansible_host": "159.49.196.79"
+            },
+            "se4tsfltopsdb01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsfltopsdb01.aagqa.net",
+                "ansible_host": "10.34.131.20"
+            },
+            "se4tsgenhunt03a": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsgenhunt03a",
+                "ansible_host": "10.34.8.132"
+            },
+            "se4tsgenhunt04a": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsgenhunt04a",
+                "ansible_host": "10.34.9.29"
+            },
+            "se4tsl7gw01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsl7gw01.alaskaair.com",
+                "ansible_host": "10.34.161.20"
+            },
+            "se4tsl7portal01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsl7portal01.alaskaair.com",
+                "ansible_host": "10.34.161.22"
+            },
+            "se4tsmq01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsmq01.aagqa.net",
+                "ansible_host": "10.34.12.10"
+            },
+            "se4tsmq02.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsmq02.aagqa.net",
+                "ansible_host": "10.34.12.17"
+            },
+            "se4tsnbot01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsnbot01.aagqa.net",
+                "ansible_host": "10.34.200.20"
+            },
+            "se4tsnbotpgdb01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsnbotpgdb01.aagqa.net",
+                "ansible_host": "10.34.200.21"
+            },
+            "se4tsnetadoci01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsnetadoci01.alaskaair.com",
+                "ansible_host": "10.34.200.25"
+            },
+            "se4tsoradiora01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tsoradiora01.aagqa.net",
+                "ansible_host": "10.34.129.27"
+            },
+            "se4tspshcmapp01.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tspshcmapp01.aagqa.net",
+                "ansible_host": "10.34.144.13"
+            },
+            "se4tspshcmapp02.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tspshcmapp02.aagqa.net",
+                "ansible_host": "10.34.144.19"
+            },
+            "se4tspshcmora01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tspshcmora01.alaskaair.com",
+                "ansible_host": "10.34.129.24"
+            },
+            "se4tspshcmora02.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tspshcmora02.aagqa.net",
+                "ansible_host": "10.34.129.17"
+            },
+            "se4tss4aapp01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tss4aapp01.alaskaair.com",
+                "ansible_host": "10.34.20.11"
+            },
+            "se4tss4aapp02.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tss4aapp02.alaskaair.com",
+                "ansible_host": "10.34.20.12"
+            },
+            "se4tss4alb01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tss4alb01.alaskaair.com",
+                "ansible_host": "10.34.20.29"
+            },
+            "se4tss4amq01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tss4amq01.alaskaair.com",
+                "ansible_host": "10.34.20.13"
+            },
+            "se4tss4amq02.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tss4amq02.alaskaair.com",
+                "ansible_host": "10.34.20.23"
+            },
+            "se4tss4apgdb01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tss4apgdb01.alaskaair.com",
+                "ansible_host": "10.34.20.37"
+            },
+            "se4tss4autil01.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tss4autil01.alaskaair.com",
+                "ansible_host": "10.34.20.38"
+            },
+            "se4tss4autil02.alaskaair.com": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tss4autil02.alaskaair.com",
+                "ansible_host": "10.34.20.47"
+            },
+            "se4tstlinesrh7.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tstlinesrh7.aagqa.net",
+                "ansible_host": "10.34.204.16"
+            },
+            "se4tstlinesrh8.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tstlinesrh8.aagqa.net",
+                "ansible_host": "10.34.204.15"
+            },
+            "se4tstower01.ts.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tstower01.ts.aagqa.net",
+                "ansible_host": "10.34.23.240"
+            },
+            "se4tstower02.ts.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tstower02.ts.aagqa.net",
+                "ansible_host": "10.34.23.241"
+            },
+            "se4tstower03.ts.aagqa.net": {
+                "Datacenter": "se4prtsvc01",
+                "FQDN": "se4tstower03.ts.aagqa.net",
+                "ansible_host": "10.34.23.242"
+            },
+            "seaalpsfinapp01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaalpsfinapp01",
+                "ansible_host": "10.80.102.43"
+            },
+            "seaalpsfinapp02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaalpsfinapp02.alaskaair.com",
+                "ansible_host": "10.80.101.161"
+            },
+            "seaalpsfinora01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaalpsfinora01",
+                "ansible_host": "10.80.102.44"
+            },
+            "seaalpsfinora02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaalpsfinora02.alaskaair.com",
+                "ansible_host": "10.80.101.191"
+            },
+            "seabdpsfinapp02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seabdpsfinapp02.alaskaair.com",
+                "ansible_host": "10.80.101.152"
+            },
+            "seabdpsfinora01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seabdpsfinora01",
+                "ansible_host": "10.80.102.20"
+            },
+            "seabdpsfinora02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seabdpsfinora02",
+                "ansible_host": "10.80.102.45"
+            },
+            "seadvat19cora01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvat19cora01",
+                "ansible_host": "10.80.102.157"
+            },
+            "seadvcms19hora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvcms19hora01.alaskaair.com",
+                "ansible_host": "10.80.88.73"
+            },
+            "seadvcms19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvcms19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.63"
+            },
+            "seadvcms8inf01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvcms8inf01.alaskaair.com",
+                "ansible_host": "10.80.88.24"
+            },
+            "seadvcms8pws01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvcms8pws01.alaskaair.com",
+                "ansible_host": "10.80.88.26"
+            },
+            "seadvcms8sps01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvcms8sps01.alaskaair.com",
+                "ansible_host": "10.80.88.25"
+            },
+            "seadvcms8web01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvcms8web01.alaskaair.com",
+                "ansible_host": "10.80.88.27"
+            },
+            "seadvfltopsdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvfltopsdb01.alaskaair.com",
+                "ansible_host": "159.49.199.147"
+            },
+            "seadvftmsdb01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvftmsdb01",
+                "ansible_host": "10.80.88.30"
+            },
+            "seadvftmsdba1": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvftmsdba1",
+                "ansible_host": "10.80.88.33"
+            },
+            "seadviselab01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadviselab01",
+                "ansible_host": "10.80.98.163"
+            },
+            "seadviselab02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadviselab02",
+                "ansible_host": "10.80.98.165"
+            },
+            "seadvkubesvr01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvkubesvr01",
+                "ansible_host": "10.80.101.133"
+            },
+            "seadvkubesvr02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvkubesvr02",
+                "ansible_host": "10.80.101.165"
+            },
+            "seadvkubesvr03": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvkubesvr03",
+                "ansible_host": "10.80.101.171"
+            },
+            "seadvkubesvr04": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvkubesvr04",
+                "ansible_host": "10.80.102.15"
+            },
+            "seadvnetdock01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvnetdock01.alaskaair.com",
+                "ansible_host": "10.80.102.14"
+            },
+            "seadvnetjump01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvnetjump01.alaskaair.com",
+                "ansible_host": "10.80.88.65"
+            },
+            "seadvnetops01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvnetops01.alaskaair.com",
+                "ansible_host": "10.80.102.120"
+            },
+            "seadvpsfinapp10": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvpsfinapp10",
+                "ansible_host": "10.80.102.40"
+            },
+            "seadvpsfinapp20": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvpsfinapp20",
+                "ansible_host": "10.80.102.34"
+            },
+            "seadvpsfinora10": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvpsfinora10",
+                "ansible_host": "10.80.102.41"
+            },
+            "seadvpsfinora20": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvpsfinora20",
+                "ansible_host": "10.80.102.35"
+            },
+            "seadvqtx19cor01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvqtx19cor01.alaskaair.com",
+                "ansible_host": "10.80.101.141"
+            },
+            "seadvrhel601.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvrhel601.alaskaair.com",
+                "ansible_host": "10.80.96.75"
+            },
+            "seadvrhel703": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvrhel703",
+                "ansible_host": "10.80.96.76"
+            },
+            "seadvrhelray01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvrhelray01",
+                "ansible_host": "10.80.102.139"
+            },
+            "seadvsbl19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvsbl19ora01.alaskaair.com",
+                "ansible_host": "172.20.77.75"
+            },
+            "seadvsbl21ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvsbl21ora01.alaskaair.com",
+                "ansible_host": "172.20.77.44"
+            },
+            "seadvsbl8hdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvsbl8hdb01.alaskaair.com",
+                "ansible_host": "10.80.97.216"
+            },
+            "seadvtdbdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvtdbdb01.alaskaair.com",
+                "ansible_host": "10.80.81.10"
+            },
+            "seadvvaultsvr01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvvaultsvr01",
+                "ansible_host": "10.80.101.195"
+            },
+            "seadvvaultsvr02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvvaultsvr02",
+                "ansible_host": "10.80.101.196"
+            },
+            "seadvvaultsvr03": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvvaultsvr03",
+                "ansible_host": "10.80.101.197"
+            },
+            "seadvvaultsvr04": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvvaultsvr04",
+                "ansible_host": "10.80.101.198"
+            },
+            "seadvvststst01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvvststst01",
+                "ansible_host": "10.80.99.44"
+            },
+            "seadvzenoss01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seadvzenoss01.alaskaair.com",
+                "ansible_host": "10.80.88.72"
+            },
+            "seaqa02s4aapp01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqa02s4aapp01.alaskaair.com",
+                "ansible_host": "172.20.77.104"
+            },
+            "seaqa02s4aapp02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqa02s4aapp02.alaskaair.com",
+                "ansible_host": "172.20.77.105"
+            },
+            "seaqa02s4aapp03.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqa02s4aapp03.alaskaair.com",
+                "ansible_host": "172.20.77.106"
+            },
+            "seaqa02s4adb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqa02s4adb01.alaskaair.com",
+                "ansible_host": "172.20.77.9"
+            },
+            "seaqaairprice01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaairprice01.alaskaair.com",
+                "ansible_host": "10.80.98.45"
+            },
+            "seaqaatx19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaatx19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.21"
+            },
+            "seaqacmfdb01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmfdb01",
+                "ansible_host": "10.80.98.67"
+            },
+            "seaqacms19hora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacms19hora01.alaskaair.com",
+                "ansible_host": "10.80.96.130"
+            },
+            "seaqacms19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacms19ora01.alaskaair.com",
+                "ansible_host": "10.80.96.153"
+            },
+            "seaqacms19ora02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacms19ora02.alaskaair.com",
+                "ansible_host": "10.24.72.45"
+            },
+            "seaqacmsinf01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmsinf01.alaskaair.com",
+                "ansible_host": "10.80.130.22"
+            },
+            "seaqacmsmon01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmsmon01.alaskaair.com",
+                "ansible_host": "10.80.130.33"
+            },
+            "seaqacmspws01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmspws01.alaskaair.com",
+                "ansible_host": "10.80.130.30"
+            },
+            "seaqacmspws02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmspws02.alaskaair.com",
+                "ansible_host": "10.80.130.31"
+            },
+            "seaqacmspws03.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmspws03.alaskaair.com",
+                "ansible_host": "10.80.130.32"
+            },
+            "seaqacmspws04.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmspws04.alaskaair.com",
+                "ansible_host": "10.80.130.35"
+            },
+            "seaqacmsspsa01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmsspsa01.alaskaair.com",
+                "ansible_host": "10.80.130.28"
+            },
+            "seaqacmsspsa02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmsspsa02.alaskaair.com",
+                "ansible_host": "10.80.130.29"
+            },
+            "seaqacmsspsb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmsspsb01.alaskaair.com",
+                "ansible_host": "10.80.130.24"
+            },
+            "seaqacmsspsb02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmsspsb02.alaskaair.com",
+                "ansible_host": "10.80.130.25"
+            },
+            "seaqacmsspsc01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmsspsc01.alaskaair.com",
+                "ansible_host": "10.80.130.26"
+            },
+            "seaqacmsweb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmsweb01.alaskaair.com",
+                "ansible_host": "10.80.130.20"
+            },
+            "seaqacmsweb02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqacmsweb02.alaskaair.com",
+                "ansible_host": "10.80.130.21"
+            },
+            "seaqadap01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqadap01.alaskaair.com",
+                "ansible_host": "10.80.88.61"
+            },
+            "seaqadap02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqadap02.alaskaair.com",
+                "ansible_host": "10.80.88.62"
+            },
+            "seaqadba01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqadba01",
+                "ansible_host": "10.80.120.34"
+            },
+            "seaqadwsdbxdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqadwsdbxdb01.alaskaair.com",
+                "ansible_host": "10.80.97.249"
+            },
+            "seaqaemaestro01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaemaestro01",
+                "ansible_host": "172.20.77.10"
+            },
+            "seaqaewa19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaewa19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.22"
+            },
+            "seaqafltopsdb04.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqafltopsdb04.alaskaair.com",
+                "ansible_host": "159.49.199.121"
+            },
+            "seaqafltopsdb06": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqafltopsdb06",
+                "ansible_host": "159.49.196.253"
+            },
+            "seaqafltopsdb07.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqafltopsdb07.alaskaair.com",
+                "ansible_host": "159.49.199.250"
+            },
+            "seaqafltopsdb08": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqafltopsdb08",
+                "ansible_host": "159.49.199.131"
+            },
+            "seaqafltopsme01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqafltopsme01",
+                "ansible_host": "159.49.196.90"
+            },
+            "seaqaftmsct01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaftmsct01",
+                "ansible_host": "10.80.88.32"
+            },
+            "seaqaftmsdb01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaftmsdb01",
+                "ansible_host": "10.80.88.31"
+            },
+            "seaqagrem01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqagrem01.alaskaair.com",
+                "ansible_host": "10.80.75.40"
+            },
+            "seaqainfltdb01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqainfltdb01",
+                "ansible_host": "10.80.100.166"
+            },
+            "seaqainfltdb02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqainfltdb02",
+                "ansible_host": "10.80.100.167"
+            },
+            "seaqainfltdb03": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqainfltdb03",
+                "ansible_host": "10.80.100.168"
+            },
+            "seaqainfltdb04": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqainfltdb04",
+                "ansible_host": "10.80.100.169"
+            },
+            "seaqajcmsljmp02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqajcmsljmp02.alaskaair.com",
+                "ansible_host": "10.80.130.52"
+            },
+            "seaqapilotct01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqapilotct01",
+                "ansible_host": "10.80.88.14"
+            },
+            "seaqapilotdb01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqapilotdb01",
+                "ansible_host": "10.80.102.65"
+            },
+            "seaqapsfinapp10.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqapsfinapp10.alaskaair.com",
+                "ansible_host": "10.80.102.28"
+            },
+            "seaqapsfinapp11.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqapsfinapp11.alaskaair.com",
+                "ansible_host": "10.80.102.29"
+            },
+            "seaqapsfinapp12": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqapsfinapp12",
+                "ansible_host": "10.80.102.30"
+            },
+            "seaqapsfinapp13": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqapsfinapp13",
+                "ansible_host": "10.80.102.31"
+            },
+            "seaqapsfinora10": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqapsfinora10",
+                "ansible_host": "10.80.102.32"
+            },
+            "seaqapsmdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqapsmdb01.alaskaair.com",
+                "ansible_host": "10.80.97.6"
+            },
+            "seaqaqxtx12co01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaqxtx12co01.alaskaair.com",
+                "ansible_host": "10.80.100.110"
+            },
+            "seaqarealtora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqarealtora01.alaskaair.com",
+                "ansible_host": "10.80.103.27"
+            },
+            "seaqasbl19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqasbl19ora01.alaskaair.com",
+                "ansible_host": "172.20.76.13"
+            },
+            "seaqasbl19ora02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqasbl19ora02.alaskaair.com",
+                "ansible_host": "172.20.76.14"
+            },
+            "seaqatws19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqatws19ora01.alaskaair.com",
+                "ansible_host": "159.49.196.148"
+            },
+            "seaqatwsmdm01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqatwsmdm01.alaskaair.com",
+                "ansible_host": "159.49.196.136"
+            },
+            "seaqatwsmdm02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqatwsmdm02.alaskaair.com",
+                "ansible_host": "159.49.196.137"
+            },
+            "seaqavinciapp01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqavinciapp01.alaskaair.com",
+                "ansible_host": "10.80.74.122"
+            },
+            "seaqaw3cmsinf01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmsinf01.alaskaair.com",
+                "ansible_host": "10.24.72.32"
+            },
+            "seaqaw3cmsmon01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmsmon01.alaskaair.com",
+                "ansible_host": "10.24.72.44"
+            },
+            "seaqaw3cmspws01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmspws01.alaskaair.com",
+                "ansible_host": "10.24.72.33"
+            },
+            "seaqaw3cmspws02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmspws02.alaskaair.com",
+                "ansible_host": "10.24.72.34"
+            },
+            "seaqaw3cmspws03.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmspws03.alaskaair.com",
+                "ansible_host": "10.24.72.35"
+            },
+            "seaqaw3cmspws04.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmspws04.alaskaair.com",
+                "ansible_host": "10.24.72.36"
+            },
+            "seaqaw3cmsspsa01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmsspsa01.alaskaair.com",
+                "ansible_host": "10.24.72.37"
+            },
+            "seaqaw3cmsspsa02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmsspsa02.alaskaair.com",
+                "ansible_host": "10.24.72.38"
+            },
+            "seaqaw3cmsspsb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmsspsb01.alaskaair.com",
+                "ansible_host": "10.24.72.39"
+            },
+            "seaqaw3cmsspsb02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmsspsb02.alaskaair.com",
+                "ansible_host": "10.24.72.40"
+            },
+            "seaqaw3cmsspsc01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmsspsc01.alaskaair.com",
+                "ansible_host": "10.24.72.41"
+            },
+            "seaqaw3cmsweb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmsweb01.alaskaair.com",
+                "ansible_host": "10.24.72.42"
+            },
+            "seaqaw3cmsweb02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3cmsweb02.alaskaair.com",
+                "ansible_host": "10.24.72.43"
+            },
+            "seaqaw3jcmsljmp01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaqaw3jcmsljmp01.alaskaair.com",
+                "ansible_host": "10.24.72.31"
+            },
+            "seasbtwsmdm01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seasbtwsmdm01.alaskaair.com",
+                "ansible_host": "159.49.196.134"
+            },
+            "seasbtwsmdm02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seasbtwsmdm02.alaskaair.com",
+                "ansible_host": "159.49.196.135"
+            },
+            "seasimqxtx19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seasimqxtx19ora01.alaskaair.com",
+                "ansible_host": "10.80.126.255"
+            },
+            "seatbcms19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatbcms19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.67"
+            },
+            "seatbcms8inf01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatbcms8inf01.alaskaair.com",
+                "ansible_host": "10.80.88.48"
+            },
+            "seatbcms8pws01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatbcms8pws01.alaskaair.com",
+                "ansible_host": "10.80.88.50"
+            },
+            "seatbcms8sps01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatbcms8sps01.alaskaair.com",
+                "ansible_host": "10.80.88.49"
+            },
+            "seatbcms8web01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatbcms8web01.alaskaair.com",
+                "ansible_host": "10.80.88.51"
+            },
+            "seatccms19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatccms19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.69"
+            },
+            "seatccms8inf01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatccms8inf01.alaskaair.com",
+                "ansible_host": "10.80.88.38"
+            },
+            "seatccms8pws01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatccms8pws01.alaskaair.com",
+                "ansible_host": "10.80.88.40"
+            },
+            "seatccms8sps01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatccms8sps01.alaskaair.com",
+                "ansible_host": "10.80.88.39"
+            },
+            "seatccms8web01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatccms8web01.alaskaair.com",
+                "ansible_host": "10.80.88.41"
+            },
+            "seaticms19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaticms19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.68"
+            },
+            "seaticms8inf01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaticms8inf01.alaskaair.com",
+                "ansible_host": "10.80.88.52"
+            },
+            "seaticms8pws01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaticms8pws01.alaskaair.com",
+                "ansible_host": "10.80.88.54"
+            },
+            "seaticms8sps01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaticms8sps01.alaskaair.com",
+                "ansible_host": "10.80.88.53"
+            },
+            "seaticms8web01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seaticms8web01.alaskaair.com",
+                "ansible_host": "10.80.88.55"
+            },
+            "seatratx19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatratx19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.56"
+            },
+            "seatrcms19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatrcms19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.66"
+            },
+            "seatrcms8inf01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatrcms8inf01.alaskaair.com",
+                "ansible_host": "10.80.88.57"
+            },
+            "seatrcms8pws01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatrcms8pws01.alaskaair.com",
+                "ansible_host": "10.80.88.59"
+            },
+            "seatrcms8sps01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatrcms8sps01.alaskaair.com",
+                "ansible_host": "10.80.88.58"
+            },
+            "seatrcms8web01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatrcms8web01.alaskaair.com",
+                "ansible_host": "10.80.88.60"
+            },
+            "seatsarp12cor01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsarp12cor01.alaskaair.com",
+                "ansible_host": "10.80.102.95"
+            },
+            "seatsatx19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsatx19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.15"
+            },
+            "seatsbiodilx01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsbiodilx01.alaskaair.com",
+                "ansible_host": "10.80.101.237"
+            },
+            "seatsblobfuse01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsblobfuse01.alaskaair.com",
+                "ansible_host": "10.80.99.36"
+            },
+            "seatsbomgar01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsbomgar01.alaskaair.com",
+                "ansible_host": "172.20.77.59"
+            },
+            "seatsclint12cdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsclint12cdb01.alaskaair.com",
+                "ansible_host": "159.49.196.28"
+            },
+            "seatsclint12cdb02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsclint12cdb02.alaskaair.com",
+                "ansible_host": "10.80.97.253"
+            },
+            "seatsclint19cora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsclint19cora01.alaskaair.com",
+                "ansible_host": "10.80.100.161"
+            },
+            "seatscms19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatscms19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.70"
+            },
+            "seatscms8inf01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatscms8inf01.alaskaair.com",
+                "ansible_host": "10.80.88.44"
+            },
+            "seatscms8pws01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatscms8pws01.alaskaair.com",
+                "ansible_host": "10.80.88.46"
+            },
+            "seatscms8sps01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatscms8sps01.alaskaair.com",
+                "ansible_host": "10.80.88.45"
+            },
+            "seatscms8web01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatscms8web01.alaskaair.com",
+                "ansible_host": "10.80.88.47"
+            },
+            "seatscmsldap01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatscmsldap01.alaskaair.com",
+                "ansible_host": "10.80.101.194"
+            },
+            "seatsct19cora02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsct19cora02.alaskaair.com",
+                "ansible_host": "10.80.102.156"
+            },
+            "seatsempltrdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsempltrdb01.alaskaair.com",
+                "ansible_host": "10.80.101.184"
+            },
+            "seatsere19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsere19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.20"
+            },
+            "seatsewa19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsewa19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.13"
+            },
+            "seatsfaajaws01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsfaajaws01.alaskaair.com",
+                "ansible_host": "159.49.196.130"
+            },
+            "seatsftms7371": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsftms7371",
+                "ansible_host": "10.80.88.35"
+            },
+            "seatsftmsdb01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsftmsdb01",
+                "ansible_host": "10.80.88.29"
+            },
+            "seatsftmsqx01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsftmsqx01",
+                "ansible_host": "10.80.88.34"
+            },
+            "seatsgpdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsgpdb01.alaskaair.com",
+                "ansible_host": "10.80.96.171"
+            },
+            "seatsgwickrh701.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsgwickrh701.alaskaair.com",
+                "ansible_host": "10.80.103.28"
+            },
+            "seatsinfltdb01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsinfltdb01",
+                "ansible_host": "10.80.100.165"
+            },
+            "seatsinfrmdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsinfrmdb01.alaskaair.com",
+                "ansible_host": "10.80.100.17"
+            },
+            "seatsiwsmdm01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsiwsmdm01.alaskaair.com",
+                "ansible_host": "10.80.102.196"
+            },
+            "seatsjcmsljmp02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsjcmsljmp02.alaskaair.com",
+                "ansible_host": "10.80.88.64"
+            },
+            "seatsjcts4aaz01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsjcts4aaz01.alaskaair.com",
+                "ansible_host": "10.80.88.16"
+            },
+            "seatsjcts4aaz02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsjcts4aaz02.alaskaair.com",
+                "ansible_host": "10.80.88.17"
+            },
+            "seatsjohnansi01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsjohnansi01.alaskaair.com",
+                "ansible_host": "10.80.88.71"
+            },
+            "seatskwood01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatskwood01.alaskaair.com",
+                "ansible_host": "10.24.20.21"
+            },
+            "seatskwood02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatskwood02.alaskaair.com",
+                "ansible_host": "10.24.20.26"
+            },
+            "seatsmfapoc01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsmfapoc01",
+                "ansible_host": "10.80.101.182"
+            },
+            "seatsmon01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsmon01.alaskaair.com",
+                "ansible_host": "10.80.88.28"
+            },
+            "seatsnetansi01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsnetansi01.alaskaair.com",
+                "ansible_host": "10.80.102.104"
+            },
+            "seatsoam12cdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsoam12cdb01.alaskaair.com",
+                "ansible_host": "10.80.98.207"
+            },
+            "seatsol7repo01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsol7repo01.alaskaair.com",
+                "ansible_host": "10.80.100.18"
+            },
+            "seatsoptmodb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsoptmodb01.alaskaair.com",
+                "ansible_host": "10.80.100.62"
+            },
+            "seatspilotdb01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatspilotdb01",
+                "ansible_host": "10.80.102.64"
+            },
+            "seatspocpg01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatspocpg01",
+                "ansible_host": "10.80.101.247"
+            },
+            "seatspsfinapp10": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatspsfinapp10",
+                "ansible_host": "10.80.102.17"
+            },
+            "seatspsfinapp20": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatspsfinapp20",
+                "ansible_host": "10.80.102.37"
+            },
+            "seatspsfinora10": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatspsfinora10",
+                "ansible_host": "10.80.102.18"
+            },
+            "seatspsfinora20": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatspsfinora20",
+                "ansible_host": "10.80.102.38"
+            },
+            "seatspsmdb01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatspsmdb01.alaskaair.com",
+                "ansible_host": "10.80.97.7"
+            },
+            "seatsqtx12cor01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsqtx12cor01.alaskaair.com",
+                "ansible_host": "10.80.101.146"
+            },
+            "seatsqtx19cor01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsqtx19cor01.alaskaair.com",
+                "ansible_host": "10.80.100.71"
+            },
+            "seatsqtx19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsqtx19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.23"
+            },
+            "seatsrealtora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsrealtora01.alaskaair.com",
+                "ansible_host": "10.80.103.13"
+            },
+            "seatsrh5repo01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsrh5repo01.alaskaair.com",
+                "ansible_host": "10.80.96.30"
+            },
+            "seatsrh7repo01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsrh7repo01.alaskaair.com",
+                "ansible_host": "10.80.96.253"
+            },
+            "seatsrheltes01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsrheltes01",
+                "ansible_host": "10.80.103.34"
+            },
+            "seatss4a19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4a19ora01.alaskaair.com",
+                "ansible_host": "10.80.88.36"
+            },
+            "seatss4aapp101.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4aapp101.alaskaair.com",
+                "ansible_host": "10.80.74.70"
+            },
+            "seatss4aapp102.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4aapp102.alaskaair.com",
+                "ansible_host": "10.80.74.71"
+            },
+            "seatss4aapp103.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4aapp103.alaskaair.com",
+                "ansible_host": "10.80.74.72"
+            },
+            "seatss4aapp104.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4aapp104.alaskaair.com",
+                "ansible_host": "10.80.75.9"
+            },
+            "seatss4abal101.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4abal101.alaskaair.com",
+                "ansible_host": "10.80.74.67"
+            },
+            "seatss4abal201.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4abal201.alaskaair.com",
+                "ansible_host": "10.80.74.204"
+            },
+            "seatss4actdb01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4actdb01",
+                "ansible_host": "10.80.96.9"
+            },
+            "seatss4amq101.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4amq101.alaskaair.com",
+                "ansible_host": "10.80.74.68"
+            },
+            "seatss4amq102.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4amq102.alaskaair.com",
+                "ansible_host": "10.80.74.69"
+            },
+            "seatss4amq103.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4amq103.alaskaair.com",
+                "ansible_host": "10.80.75.11"
+            },
+            "seatss4amq104.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4amq104.alaskaair.com",
+                "ansible_host": "10.80.75.12"
+            },
+            "seatss4amq202.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4amq202.alaskaair.com",
+                "ansible_host": "10.80.74.203"
+            },
+            "seatss4anag01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4anag01.alaskaair.com",
+                "ansible_host": "10.80.103.15"
+            },
+            "seatss4apgdb101.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4apgdb101.alaskaair.com",
+                "ansible_host": "10.80.74.79"
+            },
+            "seatss4apgdb201.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4apgdb201.alaskaair.com",
+                "ansible_host": "10.80.74.198"
+            },
+            "seatss4atrapp01a.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4atrapp01a.alaskaair.com",
+                "ansible_host": "10.80.72.155"
+            },
+            "seatss4atrapp02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4atrapp02.alaskaair.com",
+                "ansible_host": "10.80.72.156"
+            },
+            "seatss4atrdb01a.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4atrdb01a.alaskaair.com",
+                "ansible_host": "10.80.72.54"
+            },
+            "seatss4autl101.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatss4autl101.alaskaair.com",
+                "ansible_host": "10.80.74.73"
+            },
+            "seatssatsrv02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatssatsrv02.alaskaair.com",
+                "ansible_host": "10.80.101.162"
+            },
+            "seatssbl19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatssbl19ora01.alaskaair.com",
+                "ansible_host": "172.20.77.74"
+            },
+            "seatssbl19ora02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatssbl19ora02.alaskaair.com",
+                "ansible_host": "172.20.77.77"
+            },
+            "seatssfelner09": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatssfelner09",
+                "ansible_host": "10.80.98.117"
+            },
+            "seatssumolx01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatssumolx01.alaskaair.com",
+                "ansible_host": "10.80.96.147"
+            },
+            "seatstbomgar01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatstbomgar01",
+                "ansible_host": "169.254.1.1"
+            },
+            "seatstlinesol8.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatstlinesol8.alaskaair.com",
+                "ansible_host": "10.80.97.154"
+            },
+            "seatstlinesrh6.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatstlinesrh6.alaskaair.com",
+                "ansible_host": "10.80.96.114"
+            },
+            "seatstlinesrh7.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatstlinesrh7.alaskaair.com",
+                "ansible_host": "10.80.98.59"
+            },
+            "seatstlinesrh8.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatstlinesrh8.alaskaair.com",
+                "ansible_host": "10.80.97.47"
+            },
+            "seatstlinesrh9.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatstlinesrh9.alaskaair.com",
+                "ansible_host": "159.49.196.72"
+            },
+            "seatstws19ora01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatstws19ora01.alaskaair.com",
+                "ansible_host": "159.49.196.146"
+            },
+            "seatstws19ora02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatstws19ora02.alaskaair.com",
+                "ansible_host": "159.49.196.147"
+            },
+            "seatstwsdb02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatstwsdb02.alaskaair.com",
+                "ansible_host": "10.80.120.156"
+            },
+            "seatstwsmdm01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatstwsmdm01",
+                "ansible_host": "159.49.199.233"
+            },
+            "seatsucsctrl01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsucsctrl01.alaskaair.com",
+                "ansible_host": "10.80.97.211"
+            },
+            "seatsytang01.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatsytang01.alaskaair.com",
+                "ansible_host": "10.80.88.42"
+            },
+            "seatts4apgdb401.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seatts4apgdb401.alaskaair.com",
+                "ansible_host": "10.80.74.175"
+            },
+            "seavvqaproxy02.alaskaair.com": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "seavvqaproxy02.alaskaair.com",
+                "ansible_host": "172.20.77.18"
+            },
+            "sigqqaaquascan01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "sigqqaaquascan01",
+                "ansible_host": "10.80.103.70"
+            },
+            "sigqqaaquascan02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "sigqqaaquascan02",
+                "ansible_host": "10.80.103.76"
+            },
+            "sigqqaaquascan03": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "sigqqaaquascan03",
+                "ansible_host": "10.80.103.77"
+            },
+            "sigqqaaquascan04": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "sigqqaaquascan04",
+                "ansible_host": "10.80.103.73"
+            },
+            "sigqqajspl01": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "sigqqajspl01",
+                "ansible_host": "10.80.103.46"
+            },
+            "sigqqajspl02": {
+                "Datacenter": "igqprqavc01",
+                "FQDN": "sigqqajspl02",
+                "ansible_host": "10.80.103.45"
+            }
+        }
+    },
+    "igqprqavc01": {
+        "hosts": [
+            "etcdray01",
+            "etcdray02",
+            "etcdray03",
+            "igqprnmt01",
+            "igqprnmt02",
+            "igqq3l7gw01.alaskaair.com",
+            "igqq3l7gw02.alaskaair.com",
+            "igqq3mqipt01",
+            "igqq3mqipt02",
+            "",
+            "",
+            "igqqaadsmc01.alaskaair.com",
+            "igqqaansitest01.alaskaair.com",
+            "igqqabaa01",
+            "igqqacarkpsmp01",
+            "igqqacarkpsmp02",
+            "localhost.localdomain",
+            "igqqacts4aapp01.alaskaair.com",
+            "igqqacts4aapp02.alaskaair.com",
+            "igqqacts4alb01.alaskaair.com",
+            "igqqacts4amq01.alaskaair.com",
+            "igqqacts4amq02.alaskaair.com",
+            "igqqacts4anag01.alaskaair.com",
+            "igqqacts4apgdb01.alaskaair.com",
+            "igqqadbamysql01.alaskaair.com",
+            "igqqadbapgdb01.alaskaair.com",
+            "igqqadramysql01.alaskaair.com",
+            "igqqadwcentos01",
+            "igqqafltopsdb01.aagqa.net",
+            "igqqag2n77a01",
+            "igqqagarbage01.alaskaair.com",
+            "igqqagarbage02.aagqa.net",
+            "igqqahabcon01",
+            "igqqahabcon02",
+            "igqqahabcon03",
+            "igqqajbls01",
+            "igqqajpcmpt01.ocp-igq-jp-qa.alaskaair.com",
+            "igqqajpcmpt02.ocp-igq-jp-qa.alaskaair.com",
+            "igqqajpcmpt03.ocp-igq-jp-qa.alaskaair.com",
+            "igqqajpcmpt04.ocp-igq-jp-qa.alaskaair.com",
+            "igqqajpcmpt05.ocp-igq-jp-qa.alaskaair.com",
+            "igqqajpinf01.ocp-igq-jp-qa.alaskaair.com",
+            "igqqajpinf02.ocp-igq-jp-qa.alaskaair.com",
+            "igqqajpinf03.ocp-igq-jp-qa.alaskaair.com",
+            "igqqajplanin01.alaskaair.com",
+            "igqqajpmstr01.ocp-igq-jp-qa.alaskaair.com",
+            "igqqajpmstr02.ocp-igq-jp-qa.alaskaair.com",
+            "igqqajpmstr03.ocp-igq-jp-qa.alaskaair.com",
+            "igqqak8sak01",
+            "igqqak8sak02",
+            "igqqak8sak03",
+            "",
+            "igqqak8shab01",
+            "igqqak8shab02",
+            "igqqak8shab03",
+            "igqqak8shab06",
+            "igqqal7gw01.alaskaair.com",
+            "igqqal7gw02.alaskaair.com",
+            "igqqamq01.aagqa.net",
+            "igqqamq02.aagqa.net",
+            "igqqamq03.aagqa.net",
+            "igqqamq04.aagqa.net",
+            "igqqamqipt01.aagqa.net",
+            "igqqamqipt02.aagqa.net",
+            "igqqapackerlx01.aagqa.net",
+            "igqqapodman01",
+            "igqqapromnw01",
+            "igqqapshcmapp01.aagqa.net",
+            "igqqapshcmapp02.aagqa.net",
+            "igqqaqes4aapp01.alaskaair.com",
+            "igqqaqes4aapp02.alaskaair.com",
+            "igqqaqes4alb01.alaskaair.com",
+            "igqqaqes4amq01.alaskaair.com",
+            "igqqaqes4amq02.alaskaair.com",
+            "igqqaqes4apgdb01.alaskaair.com",
+            "igqqas4aapp01.airgroup.alaskaair.com",
+            "igqqas4aapp02.airgroup.alaskaair.com",
+            "igqqas4alb01.alaskaair.com",
+            "igqqas4amq01.airgroup.alaskaair.com",
+            "igqqas4amq02.airgroup.alaskaair.com",
+            "igqqas4apgdb01.alaskaair.com",
+            "igqqasadmin01.alaskaair.com",
+            "igqqasaucelabs01",
+            "igqqasqltst01",
+            "igqqatfbuild01",
+            "igqqatfbuild02",
+            "igqqatlinesrh6.aagqa.net",
+            "igqqatlinesrh7.aagqa.net",
+            "igqqatlinesrh8.aagqa.net",
+            "igqqatpapp0101",
+            "igqqatrs4aapp01.alaskaair.com",
+            "igqqatrs4aapp02.alaskaair.com",
+            "igqqatrs4alb01.alaskaair.com",
+            "igqqatrs4amq01.alaskaair.com",
+            "igqqatrs4amq02.alaskaair.com",
+            "igqqatrs4apgdb01.alaskaair.com",
+            "igqqavrapig28",
+            "ocp-infra01.igq-ocp-qa.alaskaair.com",
+            "ocp-infra02.igq-ocp-qa.alaskaair.com",
+            "ocp-infra03.igq-ocp-qa.alaskaair.com",
+            "ocp-infra04.igq-ocp-qa.alaskaair.com",
+            "ocp-infra05.igq-ocp-qa.alaskaair.com",
+            "ocplabbastion01",
+            "ocp-master01.igq-ocp-qa.alaskaair.com",
+            "ocp-master02.igq-ocp-qa.alaskaair.com",
+            "ocp-master03.igq-ocp-qa.alaskaair.com",
+            "ocp-storage01.igq-ocp-qa.alaskaair.com",
+            "ocp-storage02.igq-ocp-qa.alaskaair.com",
+            "ocp-storage03.igq-ocp-qa.alaskaair.com",
+            "ocp-worker01.igq-ocp-qa.alaskaair.com",
+            "ocp-worker02.igq-ocp-qa.alaskaair.com",
+            "ocp-worker03.igq-ocp-qa.alaskaair.com",
+            "localhost.localdomain",
+            "localhost.localdomain",
+            "se4tsdbapgdb01.alaskaair.com",
+            "seaalpsfinapp01",
+            "seaalpsfinapp02.alaskaair.com",
+            "seabdpsfinapp02.alaskaair.com",
+            "",
+            "seadvcms8inf01.alaskaair.com",
+            "seadvcms8pws01.alaskaair.com",
+            "seadvcms8sps01.alaskaair.com",
+            "seadvcms8web01.alaskaair.com",
+            "seadvfltopsdb01.alaskaair.com",
+            "seadvftmsdb01",
+            "seadvftmsdba1",
+            "seadviselab01",
+            "seadviselab02",
+            "seadvkubesvr01",
+            "seadvkubesvr02",
+            "seadvkubesvr03",
+            "seadvkubesvr04",
+            "seadvnetdock01.alaskaair.com",
+            "seadvnetjump01.alaskaair.com",
+            "seadvnetops01.alaskaair.com",
+            "seadvpsfinapp10",
+            "seadvpsfinapp20",
+            "seadvrhel601.alaskaair.com",
+            "seadvrhel703",
+            "seadvrhelray01",
+            "",
+            "seadvvaultsvr01",
+            "seadvvaultsvr02",
+            "seadvvaultsvr03",
+            "seadvvaultsvr04",
+            "",
+            "seadvvststst01",
+            "seadvzenoss01.alaskaair.com",
+            "seaqa02s4aapp01.alaskaair.com",
+            "seaqa02s4aapp02.alaskaair.com",
+            "seaqa02s4aapp03.alaskaair.com",
+            "igqvvacs01",
+            "seaqaairprice01.alaskaair.com",
+            "",
+            "seaqacmfdb01",
+            "seaqacmsinf01.alaskaair.com",
+            "seaqacmsmon01.alaskaair.com",
+            "seaqacmspws01.alaskaair.com",
+            "seaqacmspws02.alaskaair.com",
+            "seaqacmspws03.alaskaair.com",
+            "seaqacmspws04.alaskaair.com",
+            "seaqacmsspsa01.alaskaair.com",
+            "seaqacmsspsa02.alaskaair.com",
+            "seaqacmsspsb01.alaskaair.com",
+            "seaqacmsspsb02.alaskaair.com",
+            "seaqacmsspsc01.alaskaair.com",
+            "seaqacmsweb01.alaskaair.com",
+            "seaqacmsweb02.alaskaair.com",
+            "seaqadap01.alaskaair.com",
+            "seaqadap02.alaskaair.com",
+            "seaqadba01",
+            "seaqaemaestro01",
+            "",
+            "",
+            "seaqafltopsdb04.alaskaair.com",
+            "",
+            "seaqafltopsdb06",
+            "seaqafltopsdb07.alaskaair.com",
+            "seaqafltopsdb08",
+            "seaqafltopsme01",
+            "seaqaftmsct01",
+            "seaqaftmsdb01",
+            "seaqagrem01.alaskaair.com",
+            "seaqainfltdb01",
+            "seaqainfltdb02",
+            "seaqainfltdb03",
+            "seaqainfltdb04",
+            "seaqajcmsljmp02.alaskaair.com",
+            "",
+            "seaqapilotct01",
+            "seaqapilotdb01",
+            "seaqapsfinapp10.alaskaair.com",
+            "seaqapsfinapp11.alaskaair.com",
+            "seaqapsfinapp12",
+            "seaqapsfinapp13",
+            "seaqapsmdb01.alaskaair.com",
+            "seaqatwsmdm01.alaskaair.com",
+            "seaqatwsmdm02.alaskaair.com",
+            "seaqavinciapp01.alaskaair.com",
+            "igqqavlanpig01",
+            "seaqaw3cmsinf01.alaskaair.com",
+            "seaqaw3cmsmon01.alaskaair.com",
+            "seaqaw3cmspws01.alaskaair.com",
+            "seaqaw3cmspws02.alaskaair.com",
+            "seaqaw3cmspws03.alaskaair.com",
+            "seaqaw3cmspws04.alaskaair.com",
+            "seaqaw3cmsspsa01.alaskaair.com",
+            "seaqaw3cmsspsa02.alaskaair.com",
+            "seaqaw3cmsspsb01.alaskaair.com",
+            "seaqaw3cmsspsb02.alaskaair.com",
+            "seaqaw3cmsspsc01.alaskaair.com",
+            "seaqaw3cmsweb01.alaskaair.com",
+            "seaqaw3cmsweb02.alaskaair.com",
+            "seaqaw3jcmsljmp01.alaskaair.com",
+            "seasbtwsmdm01.alaskaair.com",
+            "seasbtwsmdm02.alaskaair.com",
+            "seatbcms8inf01.alaskaair.com",
+            "seatbcms8pws01.alaskaair.com",
+            "seatbcms8sps01.alaskaair.com",
+            "seatbcms8web01.alaskaair.com",
+            "seatccms8inf01.alaskaair.com",
+            "seatccms8pws01.alaskaair.com",
+            "seatccms8sps01.alaskaair.com",
+            "seatccms8web01.alaskaair.com",
+            "seaticms8inf01.alaskaair.com",
+            "seaticms8pws01.alaskaair.com",
+            "seaticms8sps01.alaskaair.com",
+            "seaticms8web01.alaskaair.com",
+            "seatrcms8inf01.alaskaair.com",
+            "seatrcms8pws01.alaskaair.com",
+            "seatrcms8sps01.alaskaair.com",
+            "seatrcms8web01.alaskaair.com",
+            "",
+            "",
+            "seatsblobfuse01.alaskaair.com",
+            "seatsbomgar01.alaskaair.com",
+            "seatsclint12cdb01.alaskaair.com",
+            "seatsclint12cdb02.alaskaair.com",
+            "seatscms8inf01.alaskaair.com",
+            "seatscms8pws01.alaskaair.com",
+            "seatscms8sps01.alaskaair.com",
+            "seatscms8web01.alaskaair.com",
+            "seatscmsldap01.alaskaair.com",
+            "localhost.localdomain",
+            "",
+            "seatsempltrdb01.alaskaair.com",
+            "seatsfaajaws01.alaskaair.com",
+            "",
+            "seatsftms7371",
+            "seatsftmsdb01",
+            "seatsftmsqx01",
+            "seatsgpdb01.alaskaair.com",
+            "seatsgwickrh701.alaskaair.com",
+            "seatsinfltdb01",
+            "seatsinfrmdb01.alaskaair.com",
+            "seatsiwsmdm01.alaskaair.com",
+            "seatsjcmsljmp02.alaskaair.com",
+            "seatsjcts4aaz01.alaskaair.com",
+            "seatsjcts4aaz02.alaskaair.com",
+            "seatsjohnansi01.alaskaair.com",
+            "seatskwood01.alaskaair.com",
+            "seatskwood02.alaskaair.com",
+            "seatsmfapoc01",
+            "seatsmon01.alaskaair.com",
+            "seatsnetansi01.alaskaair.com",
+            "seatsoam12cdb01.alaskaair.com",
+            "seatsoptmodb01.alaskaair.com",
+            "",
+            "seatspilotdb01",
+            "seatspocpg01",
+            "",
+            "seatspsfinapp10",
+            "seatspsfinapp20",
+            "seatspsmdb01.alaskaair.com",
+            "seatsrh5repo01.alaskaair.com",
+            "",
+            "seatsrh7repo01.alaskaair.com",
+            "seatsrheltes01",
+            "seatss4aapp101.alaskaair.com",
+            "seatss4aapp102.alaskaair.com",
+            "seatss4aapp103.alaskaair.com",
+            "seatss4aapp104.alaskaair.com",
+            "seatss4abal101.alaskaair.com",
+            "seatss4abal201.alaskaair.com",
+            "",
+            "",
+            "seatss4actdb01",
+            "seatss4amq101.alaskaair.com",
+            "seatss4amq102.alaskaair.com",
+            "seatss4amq103.alaskaair.com",
+            "seatss4amq104.alaskaair.com",
+            "seatss4amq202.alaskaair.com",
+            "seatss4anag01.alaskaair.com",
+            "seatss4apgdb101.alaskaair.com",
+            "seatss4apgdb201.alaskaair.com",
+            "seatss4atrapp01a.alaskaair.com",
+            "seatss4atrapp02.alaskaair.com",
+            "",
+            "seatss4autl101.alaskaair.com",
+            "seatssatsrv02.alaskaair.com",
+            "",
+            "seatssfelner09",
+            "seatssumolx01.alaskaair.com",
+            "seatstbomgar01",
+            "seatstlinesrh6.alaskaair.com",
+            "seatstlinesrh7.alaskaair.com",
+            "seatstlinesrh8.alaskaair.com",
+            "seatstlinesrh9.alaskaair.com",
+            "seatstwsdb02.alaskaair.com",
+            "seatstwsmdm01",
+            "",
+            "seatsucsctrl01.alaskaair.com",
+            "",
+            "seatsytang01.alaskaair.com",
+            "seatts4apgdb401.alaskaair.com",
+            "seavvqaproxy02.alaskaair.com",
+            "sigqqaaquascan01",
+            "sigqqaaquascan02",
+            "sigqqaaquascan03",
+            "sigqqaaquascan04",
+            "sigqqajspl01",
+            "sigqqajspl02",
+            "igqq3labcucunitypub01",
+            "igqqa19ctest01.alaskaair.com",
+            "igqqa19ctest02.alaskaair.com",
+            "igqqaadsdb01.aagqa.net",
+            "igqqaclintol8.alaskaair.com",
+            "igqqaclintol9.alaskaair.com",
+            "ns",
+            "ns",
+            "igqqaol8upg01.alaskaair.com",
+            "igqqaol8upg02.alaskaair.com",
+            "igqqapshcmora01.aagqa.net",
+            "ol77core_122",
+            "igqqatlinesol9",
+            "seaalpsfinora01",
+            "seaalpsfinora02.alaskaair.com",
+            "seabdpsfinora01",
+            "seabdpsfinora02",
+            "seadvat19cora01",
+            "seadvcms19hora01.alaskaair.com",
+            "seadvcms19ora01.alaskaair.com",
+            "seadvpsfinora10",
+            "seadvpsfinora20",
+            "seadvqtx19cor01.alaskaair.com",
+            "seadvsbl19ora01.alaskaair.com",
+            "seadvsbl21ora01.alaskaair.com",
+            "seadvsbl8hdb01.alaskaair.com",
+            "seadvtdbdb01.alaskaair.com",
+            "seaqa02s4adb01.alaskaair.com",
+            "seaqaatx19ora01.alaskaair.com",
+            "seaqacmfdb01",
+            "seaqacms19hora01.alaskaair.com",
+            "seaqacms19ora01.alaskaair.com",
+            "seaqacms19ora02.alaskaair.com",
+            "seaqadwsdbxdb01.alaskaair.com",
+            "seaqaewa19ora01.alaskaair.com",
+            "seaqapsfinora10",
+            "seaqapsmdb01.alaskaair.com",
+            "seaqaqxtx12co01.alaskaair.com",
+            "seaqarealtora01.alaskaair.com",
+            "seaqasbl19ora01.alaskaair.com",
+            "seaqasbl19ora02.alaskaair.com",
+            "seaqatws19ora01.alaskaair.com",
+            "seasimqxtx19ora01.alaskaair.com",
+            "seatbcms19ora01.alaskaair.com",
+            "seatccms19ora01.alaskaair.com",
+            "seaticms19ora01.alaskaair.com",
+            "seatratx19ora01.alaskaair.com",
+            "seatrcms19ora01.alaskaair.com",
+            "seatsarp12cor01.alaskaair.com",
+            "",
+            "seatsatx19ora01.alaskaair.com",
+            "seatsbiodilx01.alaskaair.com",
+            "seatsclint12cdb01.alaskaair.com",
+            "seatsclint12cdb02.alaskaair.com",
+            "seatsclint19cora01.alaskaair.com",
+            "seatscms19ora01.alaskaair.com",
+            "seatsct19cora02.alaskaair.com",
+            "seatsere19ora01.alaskaair.com",
+            "seatsewa19ora01.alaskaair.com",
+            "seatsgpdb01.alaskaair.com",
+            "seatsinfrmdb01.alaskaair.com",
+            "seatsoam12cdb01.alaskaair.com",
+            "seatsol7repo01.alaskaair.com",
+            "seatsoptmodb01.alaskaair.com",
+            "seatspsfinora10",
+            "seatspsfinora20",
+            "seatspsmdb01.alaskaair.com",
+            "seatsqtx12cor01.alaskaair.com",
+            "seatsqtx19cor01.alaskaair.com",
+            "seatsqtx19ora01.alaskaair.com",
+            "seatsrealtora01.alaskaair.com",
+            "seatss4a19ora01.alaskaair.com",
+            "seatss4actdb01",
+            "seatss4atrdb01a.alaskaair.com",
+            "seatssbl19ora01.alaskaair.com",
+            "seatssbl19ora02.alaskaair.com",
+            "seatstlinesol8.alaskaair.com",
+            "seatstws19ora01.alaskaair.com",
+            "seatstws19ora02.alaskaair.com",
+            "seatstwsdb02.alaskaair.com"
+        ],
+        "vars": {}
+    },
+    "se4prtsvc01": {
+        "hosts": [
+            "localhost.localdomain",
+            "se4alpshcmapp01.aagqa.net",
+            "se4alpshcmapp02.aagqa.net",
+            "se4bdpshcmapp02.aagqa.net",
+            "se4dvfltopsdb01.aagqa.net",
+            "se4dvpshcmapp01.aagqa.net",
+            "se4dvpshcmapp02.aagqa.net",
+            "se4shxtest04",
+            "se4t3ddos01.aagq3.net",
+            "se4t3l7gw01.alaskaair.com",
+            "se4t3l7portal01.alaskaair.com",
+            "se4testcj.alaskaair.com",
+            "se4tsapetcd01",
+            "se4tsapetcd02",
+            "se4tsapetcd03",
+            "se4tsapetcd04",
+            "se4tsapetcd05",
+            "se4tsawx01",
+            "se4tsdbamysql01.alaskaair.com",
+            "se4tsfltopsdb01.aagqa.net",
+            "se4tsgenhunt03a",
+            "se4tsgenhunt04a",
+            "se4tsl7gw01.alaskaair.com",
+            "se4tsl7portal01.alaskaair.com",
+            "se4tsmq01.aagqa.net",
+            "se4tsmq02.aagqa.net",
+            "se4tsnbot01.aagqa.net",
+            "se4tsnbotpgdb01.aagqa.net",
+            "se4tsnetadoci01.alaskaair.com",
+            "se4tspshcmapp01.aagqa.net",
+            "se4tspshcmapp02.aagqa.net",
+            "se4tss4aapp01.alaskaair.com",
+            "se4tss4aapp02.alaskaair.com",
+            "se4tss4alb01.alaskaair.com",
+            "se4tss4amq01.alaskaair.com",
+            "se4tss4amq02.alaskaair.com",
+            "se4tss4apgdb01.alaskaair.com",
+            "se4tss4autil01.alaskaair.com",
+            "se4tss4autil02.alaskaair.com",
+            "se4tstlinesrh7.aagqa.net",
+            "se4tstlinesrh8.aagqa.net",
+            "se4tstower01.ts.aagqa.net",
+            "se4tstower02.ts.aagqa.net",
+            "se4tstower03.ts.aagqa.net",
+            "se4alpshcmora01.aagqa.net",
+            "se4alpshcmora02.alaskaair.com",
+            "se4bdpshcmora01.aagqa.net",
+            "se4bdpshcmora02.aagqa.net",
+            "se4dvpshcmora01.aagqa.net",
+            "se4dvpshcmora02.aagqa.net",
+            "se4tsoradiora01.aagqa.net",
+            "se4tspshcmora01.alaskaair.com",
+            "se4tspshcmora02.aagqa.net"
+        ],
+        "vars": {}
+    }
+}
