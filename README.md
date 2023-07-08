@@ -2,12 +2,13 @@
 
 ## Table Of Contents
   1. [Overview](#overview)
-  2. [Onboarding](#onboarding)
-  2.1 [Roles](#roles)
-  3. [Unparing and Uninstalling](#unpairinganduninstalling)
-  3.1 [Important Note](#importantnote)
-  4. [General Notes](#generalnotes)
-  5. [TODOs](#todos)
+  2. [Workflow](#workflow)
+  3. [Onboarding](#onboarding)
+  4.  [Roles](#roles)
+  5. [Unparing and Uninstalling](#unpairinganduninstalling)
+  6. [Important Note](#importantnote)
+  7. [General Notes](#generalnotes)
+  8. [TODOs](#todos)
 
 
 ## Overview
@@ -18,13 +19,19 @@ Because in some cases there are pre-requisites, I chose to manage this "onboardi
 Due to a wide variety of environmental issues arising from the AS Enterprise network & remote access, I've incoroporated certain Ansible "quality of life" settings in an "ansible.cfg" local to the playbook working directory.
 
 
+## Workflow
+I'm experimenting with moving to a refactor of this playbook to use dynamic inventories, instead of static. The modules I've tested thus far aren't cooperating, so my interim workflow goes approximately like so:
+
+* run PowerShell to query VMware for "in scope" endpoints -> (manually review and sanity check output "Linux_VMs_vInfo_NonProd-YYYY-MM-DD.csv") -> tweak "as-linux_convert_csv_to_ini.yml" playbook as needed -> run "as-linux_convert_csv_to_ini.yml" -> (manually review and sanity check output "converted_csv_hosts.ini") -> if all looks good, run onboarding using newly minted inventory (as discussed in more detail below in #onboarding)
+
+
 ## Onboarding
 
-The heavy lifting is done by `as-linux_illumio_onboard_bash.yml`
+The heavy lifting is now done by `as-linux_illumio_onboard_wrapper.yml`
 
 Invoke this playbook thusly:
 
-`$ ansible-playbook -i ./hosts as-linux_illumio_onboard_bash.yml -k -K --ask-pass`
+`$ ansible-playbook -i ./hosts as-linux_illumio_onboard_wrapper.yml -k -K --ask-pass`
 
 This leverages an "ansible_user" setting done in the "vars" section of the inventory file, and interactively prompts for the SSH and SUDO password.
 
@@ -58,12 +65,15 @@ At this time, ITS Compute team doesn't appear to have access to change modes on 
 ## General Notes
 - Some additional files are stored within the code tree, for the sake of "overall workflow portability" 
 
-  - files/reference_only/new_inventory_seeds/ contains a PowerShell script that can be leveraged to pull servernames for inventory files directly from VMware RVtools, as well as some XLS sheets that have been manually sorted by Christy
+  - files/reference_only/new_inventory_seeds/ contains a PowerShell script that can be leveraged to pull servernames for inventory files directly from VMware RVtools, and some experimental dynamic inventory-related odds n ends
   -  files/reference_only/hosts.* I've been using the hosts.done inventory file to attempt to keep track of which endpoints have had a successful VEN deployment, and hosts.exceptions to track endpoints that fail to onboard (lots more of these, for a variety of reasons, e.g., ITS Compute doesn't have creds, or SSH keys won't connect, or server has been decommissioned, etc.)
   - hosts_rhel87 was a specific list of exceptions due to the "could not create user" issue -- workaround has been identified by Illumio, but we're awaiting a new installer package from them.
 
 ## TODOs
 
+  - refine inventory queries
+  - move to a dynamic inventory if feasible
+  - refine credential handling
   - ADD ROLE TO PRE-SCREEN FOR ANY CONTAINERIZATION SOFTWARE AND FAIL OUT IF FOUND
     * Project sponsors decided containers are "out of scope" for the project at this time
     * Special steps must be taken before VEN installation to prevent fouling up IP filtering rules for Docker/Podman/Kubernetes/etc
