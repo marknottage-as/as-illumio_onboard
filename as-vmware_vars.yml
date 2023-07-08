@@ -1,0 +1,6 @@
+# required by playbooks using vmware community methods -- update redacted values prior to running vmware inventory script
+vars:
+        username: [redacted]
+        password: [redacted]
+
+    
