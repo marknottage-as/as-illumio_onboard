@@ -1,9 +1,8 @@
 ---
-- name: ENSURE PREREQUISITES FOR ILLUMIO VEN
+- name: ILLUMIO VEN PREPARE for templates
   hosts: all
   become: yes
   vars_files:
-    - as_vars.yml
     - as_vmware_vars.yml
   tasks:
     - block:
@@ -12,10 +11,10 @@
 
         # if pre-requisites check out, push the script and run it
         - name: push the script
-          copy: src=./files/onboarding.sh dest=/export/home/{{  ansible_user }} mode=0777
+          copy: src=./files/preparing.sh dest=/export/home/{{  ansible_user }} mode=0777
 
         - name: onboarding script
-          command: sh /export/home/{{  ansible_user }}/onboarding.sh
+          command: sh /export/home/{{  ansible_user }}/preparing.sh
       when:
          - inventory_hostname in lookup('inventory_hostnames', 'rhel8_64Guest', 'rhel7_64Guest', 'rhel6_64Guest', 'rhel6Guest', 'rhel5_64Guest', 'rhel5Guest', 'rhel4_64Guest', 'rhel4Guest', 'oracleLinux8_64Guest', 'oracleLinux64Guest')
          - guest.hostName is match(\w*(qa|ts|dv)\w*)

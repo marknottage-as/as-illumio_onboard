@@ -7,21 +7,28 @@
 # USE AT YOUR OWN RISK
 #
 - name: unpair Illumio VEN
-  hosts: illumiopoc
+  hosts: all
   become: yes
-  tasks:
-    - name: do the thing 1
-      command: /opt/illumio_ven/illumio-ven-ctl deactivate
+  vars_files:
+    - as_vars.yml
+#    - as_vmware_vars.yml
 
-    -name: do the thing 2
+  tasks:
+
+    - name: deactivate VEN
+      command: /opt/illumio_ven/illumio-ven-ctl deactivate
+      ignore_errors: True
+
+    - name: umpair VEN and restore save IP filtering state
       command: /opt/illumio_ven/illumio-ven-ctl unpair saved
+      ignore_errors: True
 
     - name: remove the onboarding script
-      file: 
-      state: absent
-      path: /export/home/mnottage/onboarding.sh
+      file:
+        state: absent
+        path: /export/home/mnottage/onboarding.sh
 
     - name: Delete content & directory
       file:
-      state: absent
-      path: /opt/illumio_ven/ 
+        state: absent
+        path: /opt/illumio_ven/

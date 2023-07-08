@@ -1,0 +1,23 @@
+---
+- name: Convert CSV to ini inventory 
+  hosts: localhost
+  gather_facts: false
+  vars:
+    csv_hosts: "{{ out.stdout_lines|map('split', ',')|groupby('0') }}"
+    ini_hosts: |
+      {% for group in csv_hosts %}
+      [{{ group.0 }}]
+      {% for host in group.1|map(attribute='1') %}
+#      {{ host }}
+      {{ host | union([': '+group.1|map(attribute='2']) }}
+      {% endfor %}
+
+      {% endfor %}
+  tasks:
+    - command: cat ./Linux_VMs_vInfo_NonProd-2023-06-28.csv
+      register: out
+    - debug:
+        var: ini_hosts
+    - copy:
+        dest: ./converted_csv_hosts.ini
+        content: "{{ ini_hosts }}"

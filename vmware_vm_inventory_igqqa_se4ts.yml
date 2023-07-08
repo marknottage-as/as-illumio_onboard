@@ -1,0 +1,40 @@
+---
+#
+# dynamic inventory for igqqa and se4ts
+#
+# Use Datacenter, Cluster and Folder value to list VMs
+    plugin: community.vmware.vmware_vm_inventory
+    strict: False
+    hostname: igqprqavc01.alaskaair.com
+    # hostname: se4prtsvc01.alaskaair.com     
+    username: AAGP2\mnottage_SA
+    password: 321RonanBrennaMyriah!
+    validate_certs: false
+    with_tags: True
+    properties:
+    - 'name'
+    - 'config.name'
+    - 'guest.ipAddress'
+    - 'guest.toolsStatus'
+    - 'guest.toolsRunningStatus'
+    - 'config.guestFullName'
+    - 'config.guestId'
+    hostnames:
+    - 'config.name'
+    filters:
+    - config.guestId == "rhel8_64Guest" or "rhel7_64Guest" or "rhel6_64Guest" or "rhel6Guest" or "rhel5_64Guest" or "rhel5Guest" or "rhel4_64Guest" or "rhel4Guest" or "oracleLinux8_64Guest" or "oracleLinux64Guest" or config.name == "rhel_20_04_empty"
+
+#    resources:
+#      - datacenter:
+#        - igqprqavc01
+#        - se4prtsvc01
+#        resources:
+#        - compute_resource:
+#          - IGQ-QA-GEN
+#          - IGQ-QA-GEN2
+#          - IGQ-QA-ORA
+#          - IGQ-QA-ORA2
+#          - IGQ-QA-SQL2
+#          - SE4-TS-GEN
+#          - SE4-TS-ORA
+

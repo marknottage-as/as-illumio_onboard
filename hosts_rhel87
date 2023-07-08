@@ -1,19 +1,20 @@
 ---
 all:
   hosts:
-    igqqa19ctest01: # OUL/RHEL 8.7
-    igqqa19ctest02: # OUL/RHEL 8.7
-    igqqacts4aapp01: # OUL/RHEL 8.7
-    igqqacts4aapp02: # OUL/RHEL 8.7
-    igqqacts4alb01: # OUL/RHEL 8.7
-    igqqacts4amq01: # OUL/RHEL 8.7
-    igqqacts4amq02: # OUL/RHEL 8.7
-    igqqacts4apgdb01: # OUL/RHEL 8.7
-    igqqaqes4aapp01: # OUL/RHEL 8.7
-    igqqaqes4aapp02: # OUL/RHEL 8.7
-    igqqaqes4alb01: # OUL/RHEL 8.7
-    igqqaqes4amq02: # OUL/RHEL 8.7
-    igqqaqes4apgdb01: # OUL/RHEL 8.7
+#    seatscmsldap01: # Podman installed & running -- SHOULD SKIP!
+#    igqqa19ctest01: # OUL/RHEL 8.7
+#    igqqa19ctest02: # OUL/RHEL 8.7
+#    igqqacts4aapp01: # OUL/RHEL 8.7
+#    igqqacts4aapp02: # OUL/RHEL 8.7
+#    igqqacts4alb01: # OUL/RHEL 8.7
+#    igqqacts4amq01: # OUL/RHEL 8.7
+#    igqqacts4amq02: # OUL/RHEL 8.7
+#    igqqacts4apgdb01: # OUL/RHEL 8.7
+#    igqqaqes4aapp01: # OUL/RHEL 8.7
+#    igqqaqes4aapp02: # OUL/RHEL 8.7
+#    igqqaqes4alb01: # OUL/RHEL 8.7
+#    igqqaqes4amq02: # OUL/RHEL 8.7
+#    igqqaqes4apgdb01: # OUL/RHEL 8.7
     igqqas4aapp02: # OUL/RHEL 8.7
     igqqas4alb01: # OUL/RHEL 8.7
     igqqas4amq01: # OUL/RHEL 8.7
@@ -26,7 +27,6 @@ all:
     se4tss4apgdb01: # OUL/RHEL 8.7
     seadvzenoss01: # OUL/RHEL 8.7
     seatsjcmsljmp02: # OUL/RHEL 8.7
-
     igqqaclintol8: # OUL 8.7
 
   vars:

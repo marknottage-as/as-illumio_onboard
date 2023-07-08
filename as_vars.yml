@@ -1,0 +1,7 @@
+vars:
+    # our preference will be to use the "ansible" service account
+        ansible_user: ansible
+    #    ansible_user: root
+    #    ansible_user: devopsconfig
+    #    ansible_user: mnottage
+        ansible_ssh_extra_args: -o StrictHostKeyChecking=no -o HostKeyAlgorithms=+ssh-rsa -o KexAlgorithms=+diffie-hellman-group1-sha1

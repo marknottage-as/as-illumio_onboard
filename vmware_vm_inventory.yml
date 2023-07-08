@@ -1,0 +1,16 @@
+#
+# dynamic inventory for "vanilla, everything" on igqpr
+#
+---
+plugin: vmware_vm_inventory
+strict: false
+hostname: igqprvc01.alaskaair.com
+# hostname: se4prvc01.alaskaair.com     
+username: AAGP2\mnottage_SA
+password: 321RonanBrennaMyriah!
+validate_certs: false
+with_tags: false
+groups:
+  VMs: True
+filters:
+  - guest.guestId == "rhel8_64Guest" or "rhel7_64Guest" or "rhel6_64Guest" or "rhel6Guest" or "rhel5_64Guest" or "rhel5Guest" or "rhel4_64Guest" or "rhel4Guest" or "oracleLinux8_64Guest" or "oracleLinux64Guest" and guest.hostName is match(\w*(qa|ts|dv)\w*)

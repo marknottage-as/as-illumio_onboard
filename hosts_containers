@@ -1,9 +1,11 @@
 ---
 all:
   hosts:
-    seatscmsldap01:     #EXEMPT-PODMAN
-    se4tsawx01:
+    se4tsawx01:         # does NOT appear to have docker-ce or podman installed
       ansible_host: 10.34.130.24
+    seadvnetdock01:     # EXEMPT-DOCKER
+    igqqa19ctest01:     # OUL/RHEL 8.7 -- should install
+    seatscmsldap01:     # EXEMPT-PODMAN
 
   vars:
 # our preference will be to use the "ansible" service account
