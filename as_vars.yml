@@ -4,4 +4,4 @@ vars:
     #    ansible_user: root
     #    ansible_user: devopsconfig
     #    ansible_user: mnottage
-        ansible_ssh_extra_args: -o StrictHostKeyChecking=no -o HostKeyAlgorithms=+ssh-rsa -o KexAlgorithms=+diffie-hellman-group1-sha1
+        ansible_ssh_extra_args: -o StrictHostKeyChecking=no -o HostKeyAlgorithms=+ssh-rsa -o HostKeyAlgorithms=+ssh-dsa -o KexAlgorithms=+diffie-hellman-group1-sha1
