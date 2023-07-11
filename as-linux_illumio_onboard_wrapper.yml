@@ -28,6 +28,7 @@
           file:
             state: absent
             path: /export/home/{{ ansible_user }}/onboarding.sh
+          become: yes
           failed_when: false
 
         # cleanup any previous failed run artifacts
@@ -35,6 +36,7 @@
           file:
             state: absent
             path: /opt/illumio_ven/
+          become: yes
           failed_when: false
 
         # check for Illumio VEN pre-requisites
@@ -43,10 +45,12 @@
         # if pre-requisites check out, push the script and run it
         - name: push the onboarding script
           copy: src=./files/onboarding.sh dest=/export/home/{{  ansible_user }} mode=0777
+          become: yes
 
         # run the onboarding script
         - name: run the onboarding script
           command: sh /export/home/{{  ansible_user }}/onboarding.sh
+          become: yes
 
 #        - name: post-install, reset SYS_MAX_UID
 #          replace:
