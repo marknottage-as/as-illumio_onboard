@@ -1,6 +1,7 @@
 rm -fr /opt/illumio_ven_data/tmp &&
-umask 026 &&
+#umask 026 &&
 mkdir -p /opt/illumio_ven_data/tmp &&
+chmod -R 751 /opt/illumio_ven_data/tmp &&
 #curl --tlsv1 "https://us-scp7.illum.io:443/api/v22/software/ven/image?pair_script=pair.sh&profile_id=1683" -o /opt/illumio_ven_data/tmp/pair.sh &&
 curl --insecure "https://us-scp7.illum.io:443/api/v22/software/ven/image?pair_script=pair.sh&profile_id=1683" -o /opt/illumio_ven_data/tmp/pair.sh &&
 chmod +x /opt/illumio_ven_data/tmp/pair.sh &&
