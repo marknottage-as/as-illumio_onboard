@@ -41,10 +41,10 @@
 
         - name: pre-install, disable yum sslverify to correct OUL yum repo errors
           lineinfile:
-             path: /etc/yum.conf
-             line: sslverify=false
-             create: yes
-           backup: yes
+            path: /etc/yum.conf
+            line: sslverify=false
+            create: yes
+            backup: yes
           when: (ansible_distribution_file_variety == "OracleLinux" and ansible_distribution_major_version == "6")
 
         # check for Illumio VEN pre-requisites
@@ -60,12 +60,12 @@
           command: sh /export/home/{{  ansible_user }}/onboarding.sh
           become: yes
 
-        - name: postr-install, re-enable yum sslverify on OUL6
+        - name: post-install, re-enable yum sslverify on OUL6
           lineinfile:
-             path: /etc/yum.conf
-             line: sslverify=true
-             create: yes
-           backup: yes
+            path: /etc/yum.conf
+            line: sslverify=true
+            create: yes
+            backup: yes
           when: (ansible_distribution_file_variety == "OracleLinux" and ansible_distribution_major_version == "6")
 
 
