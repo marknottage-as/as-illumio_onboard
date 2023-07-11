@@ -39,6 +39,14 @@
           become: yes
           failed_when: false
 
+        - name: pre-install, disable yum sslverify to correct OUL yum repo errors
+          lineinfile:
+             path: /etc/yum.conf
+             line: sslverify=false
+             create: yes
+           backup: yes
+          when: (ansible_distribution_file_variety == "OracleLinux" and ansible_distribution_major_version == "6")
+
         # check for Illumio VEN pre-requisites
         - include: ./roles/prereqs/tasks/main.yml
 
@@ -52,6 +60,15 @@
           command: sh /export/home/{{  ansible_user }}/onboarding.sh
           become: yes
 
+        - name: postr-install, re-enable yum sslverify on OUL6
+          lineinfile:
+             path: /etc/yum.conf
+             line: sslverify=true
+             create: yes
+           backup: yes
+          when: (ansible_distribution_file_variety == "OracleLinux" and ansible_distribution_major_version == "6")
+
+
 #        - name: post-install, reset SYS_MAX_UID
 #          replace:
 #            path: /etc/login.defs
@@ -59,7 +76,7 @@
 #            replace: 'SYS_UID_MAX     102'
 #          backup: yes
 #      when: (ansible_distribution_file_variety == "RedHat" and ansible_distribution_major_version == "8")
-          when: (ansible_distribution_file_variety == "RedHat" or ansible_distribution_file_variety == "OracleLinux")
+#          when: (ansible_distribution_file_variety == "RedHat" or ansible_distribution_file_variety == "OracleLinux")
 
       when:
          - ven_installed.rc | default(0) != 0    # only execute the block if the VEN is NOT installed already
