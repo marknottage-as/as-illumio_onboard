@@ -120,7 +120,7 @@
       ignore_errors: true
       when: (ansible_distribution_file_variety == "RedHat" and ansible_distribution_major_version == "6")
 
-    - name: pre-install - increase SYS_MAX_MIN for RedHat and OUL
+    - name: pre-install - increase SYS_MIN_UID for RedHat and OUL
       replace:
         path: /etc/login.defs
         regexp: '(^SYS_UID_MIN)(.*)$'

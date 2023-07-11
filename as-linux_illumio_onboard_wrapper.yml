@@ -60,13 +60,13 @@
           command: sh /export/home/{{  ansible_user }}/onboarding.sh
           become: yes
 
-        - name: post-install, re-enable yum sslverify on OUL6
-          lineinfile:
-            path: /etc/yum.conf
-            line: sslverify=true
-            create: yes
-            backup: yes
-          when: (ansible_distribution_file_variety == "OracleLinux" and ansible_distribution_major_version == "6")
+#        - name: post-install, re-enable yum sslverify on OUL6
+#          lineinfile:
+#            path: /etc/yum.conf
+#            line: sslverify=true
+#            create: yes
+#            backup: yes
+#          when: (ansible_distribution_file_variety == "OracleLinux" and ansible_distribution_major_version == "6")
 
 
 #        - name: post-install, reset SYS_MAX_UID
