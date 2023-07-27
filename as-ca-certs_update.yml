@@ -8,7 +8,7 @@
   tasks:
     - name: update ca-certifications
       package:
-        name: ca-certifications
+        name: ca-certificates
         state: latest
       notify:
       - do the update
