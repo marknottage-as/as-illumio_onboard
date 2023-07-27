@@ -11,8 +11,8 @@
         name: ca-certificates
         state: latest
       notify:
-      - do the update
+      - doit
 
-    - name: do the update
+    - name: doit
       command: update-ca-trust force-enable
 #      listen: "update ca-certification"
