@@ -6,7 +6,7 @@
     - as_vars.yml
 #    - as_vmware_vars.yml
   tasks:
-    - name: update ca-certifications
+    - name: update ca-certificates
       package:
         name: ca-certificates
         state: latest
