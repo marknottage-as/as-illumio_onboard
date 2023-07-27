@@ -1,11 +1,11 @@
 rm -fr /opt/illumio_ven_data/tmp &&
 umask 026 &&
   # use next 2 to replace umask command, if it's missing on workloads
-  #mkdir -p /opt/illumio_ven_data/tmp &&
+mkdir -p /opt/illumio_ven_data/tmp &&
   #chmod -R 751 /opt/illumio_ven_data/tmp &&
 # need to use --insecure curl on legacy systems with outdated certs
-#curl --tlsv1 "https://us-scp7.illum.io:443/api/v22/software/ven/image?pair_script=pair.sh&profile_id=1683" -o /opt/illumio_ven_data/tmp/pair.sh &&
-curl --insecure "https://us-scp7.illum.io:443/api/v22/software/ven/image?pair_script=pair.sh&profile_id=1683" -o /opt/illumio_ven_data/tmp/pair.sh &&
+curl --tlsv1 "https://us-scp7.illum.io:443/api/v22/software/ven/image?pair_script=pair.sh&profile_id=1683" -o /opt/illumio_ven_data/tmp/pair.sh &&
+#curl --insecure "https://us-scp7.illum.io:443/api/v22/software/ven/image?pair_script=pair.sh&profile_id=1683" -o /opt/illumio_ven_data/tmp/pair.sh &&
 chmod +x /opt/illumio_ven_data/tmp/pair.sh &&
 # if troubleshooting a specific endpoint, remove code that deletes pair.sh after it's run
 # vi /opt/illumio_ven_data/tmp/pair.sh &&
