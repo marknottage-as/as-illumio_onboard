@@ -1,5 +1,5 @@
 ---
-- name: IF ILLUMIO VEN IS NOT INSTALLED, CHECK PREREQUISITES AND INSTALL
+- name: update ca-cert package and restart the service
   hosts: all
   become: yes
   vars_files:
@@ -11,8 +11,8 @@
         name: ca-certifications
         state: latest
       notify:
-      - Update ca-trust
+      - do the update
 
-    - name: Update ca-trust
+    - name: do the update
       command: update-ca-trust force-enable
-      listen: "update ca-certification"
+#      listen: "update ca-certification"
